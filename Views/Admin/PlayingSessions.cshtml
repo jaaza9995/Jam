@@ -1,0 +1,40 @@
+@using Jam.Models
+@model IEnumerable<PlayingSession>
+
+@{
+    ViewData["Title"] = "Admin - Users";
+}
+<h2>Playing Sessions</h2>
+
+@if (!Model.Any())
+{
+    <div class="alert alert-info">
+        No playing sessions found in the system.
+    </div>
+}
+else
+{
+    <table class="table table-striped table-bordered align-middle">
+        <thead class="table-dark">
+            <tr>
+                <th>Player Username</th>
+                <th>Story Title</th>
+                <th>Start time</th>
+                <th>End time</th>
+                <th>Score / Max Score</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var playingSession in Model)
+            {
+                <tr>
+                    <td>@playingSession.User?.UserName</td>
+                    <td>@playingSession.Story.Title</td>
+                    <td>@playingSession.StartTime</td>
+                    <td>@playingSession.EndTime</td>
+                    <td>@playingSession.Score / @playingSession.MaxScore</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}

@@ -1,0 +1,86 @@
+@using Jam.ViewModels.StoryPlaying
+@model StorySelectionViewModel
+
+@*
+    This view is not supposed to display public AND private stories.
+    It should ONLY display all the public stories. If a user wants to play a
+    private Story, they must search for it by Title and then add the code
+    when clicking "Play", or seach for it by the code and immediately start
+    playing it when clicking "Play". 
+*@
+
+<div class="text-center">
+
+    <h1 class="display-4">Browse Stories!</h1>
+    <form asp-action="JoinPrivateStory" method="post" class="mb-4 d-flex justify-content-center">
+    <input type="text" name="code" class="form-control w-25 me-2 text-uppercase"
+           placeholder="Code for new private game..." maxlength="8" />
+    <button type="submit" class="btn btn-dark">Join</button>
+    </form>
+    <form asp-action="SelectStory" method="get" class="mb-4 d-flex justify-content-center">
+    <input type="text" name="search" class="form-control w-50 me-2"
+           placeholder="Search for a story title..."
+           value="@ViewData["Search"]" />
+    <button type="submit" class="btn btn-primary">Search</button>
+    </form>
+
+    <br />
+
+    <h5>All public stories:</h5> @*This should be a partial*@
+    <div class="row g-4">
+        @foreach (var story in Model.PublicStories)
+        {
+            @if (!Model.PublicStories.Any())
+            {
+                <p class="text-muted">No stories found matching your search.</p>
+            }
+            <div class="col-md-4">
+                <div class="card bg-light shadow-sm h-100 border-0">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">@story.Title</h5>
+                        <p class="card-text text-muted">@story.Description</p>
+
+                        <div class="mt-auto">
+                            <span class="badge bg-primary me-2">@story.DifficultyLevel</span>
+                            <span class="badge bg-secondary">@story.Accessible</span>
+                        </div>
+                    </div>
+
+                    <div class="card-footer bg-transparent border-0">
+                        <a asp-controller="StoryPlaying" asp-action="StartStory" asp-route-storyId="@story.StoryId"
+                            class="btn btn-sm btn-success w-100">Play</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+
+    <br />
+    <br />
+
+    <h5>All private stories:</h5> @*This should be a partial*@
+    <div class="row g-4">
+        @foreach (var story in Model.PrivateStories)
+        {
+            <div class="col-md-4">
+                <div class="card bg-light shadow-sm h-100 border-0">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">@story.Title</h5>
+                        <p class="card-text text-muted">@story.Description</p>
+
+                        <div class="mt-auto">
+                            <span class="badge bg-primary me-2">@story.DifficultyLevel</span>
+                            <span class="badge bg-secondary">@story.Accessible</span>
+                        </div>
+                    </div>
+
+                    <div class="card-footer bg-transparent border-0">
+                        <a asp-controller="StoryPlaying" asp-action="StartStory" asp-route-storyId="@story.StoryId"
+                            class="btn btn-sm btn-success w-100">Play</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+
+</div>

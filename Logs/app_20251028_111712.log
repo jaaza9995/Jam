@@ -1,0 +1,15 @@
+2025-10-28 11:17:12.767 +01:00 [INF] Applying migration '20251024065541_InitialCreate'.
+2025-10-28 11:17:13.108 +01:00 [INF] User profile is available. Using '/Users/michaelnedgaardisaksen/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-10-28 11:17:13.343 +01:00 [INF] Now listening on: https://localhost:7025
+2025-10-28 11:17:13.345 +01:00 [INF] Now listening on: http://localhost:5262
+2025-10-28 11:17:13.349 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-28 11:17:13.350 +01:00 [INF] Hosting environment: Development
+2025-10-28 11:17:13.350 +01:00 [INF] Content root path: /Users/michaelnedgaardisaksen/Documents/ITPE3100_Webapplikasjoner/Demo-Jam/Jam
+2025-10-28 11:17:13.582 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7025/ - null null
+2025-10-28 11:17:13.594 +01:00 [INF] Executing endpoint 'Jam.Controllers.HomeController.Index (Jam)'
+2025-10-28 11:17:13.604 +01:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller Jam.Controllers.HomeController (Jam).
+2025-10-28 11:17:13.695 +01:00 [INF] Executing ViewResult, running view Index.
+2025-10-28 11:17:13.736 +01:00 [INF] Executed ViewResult - view Index executed in 40.4836ms.
+2025-10-28 11:17:13.739 +01:00 [INF] Executed action Jam.Controllers.HomeController.Index (Jam) in 135.1623ms
+2025-10-28 11:17:13.740 +01:00 [INF] Executed endpoint 'Jam.Controllers.HomeController.Index (Jam)'
+2025-10-28 11:17:13.746 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7025/ - 200 null text/html; charset=utf-8 165.1617ms

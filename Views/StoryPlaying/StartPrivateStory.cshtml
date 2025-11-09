@@ -1,0 +1,23 @@
+@using Jam.Models.Enums
+@using Jam.ViewModels.StoryPlaying
+@model StartPrivateStoryViewModel
+
+<div class="text-center mt-5">
+    <h2>Ready to play? <strong>@Model.Title</strong>?</h2>
+    </p>
+
+    <div class="mt-4">
+        <a asp-controller="StoryPlaying"
+           asp-action="ConfirmStartStory"
+           asp-route-storyId="@Model.StoryId"
+           class="btn btn-success me-3">
+            Yes
+        </a>
+
+        <a asp-controller="StoryPlaying"
+           asp-action="SelectStory"
+           class="btn btn-outline-secondary">
+            No
+        </a>
+    </div>
+</div>

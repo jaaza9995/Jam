@@ -1,0 +1,33 @@
+@model Jam.ViewModels.EndingScenesViewModel
+
+<form asp-action="@(Model.IsEditMode ? "EditEndingScenes" : "CreateEndingScenes")" method="post">
+    <input type="hidden" asp-for="StoryId" />
+
+    <div class="form-group">
+        <label asp-for="GoodEnding"></label>
+        <textarea asp-for="GoodEnding" class="form-control"></textarea>
+        <span asp-validation-for="GoodEnding" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="NeutralEnding"></label>
+        <textarea asp-for="NeutralEnding" class="form-control"></textarea>
+        <span asp-validation-for="NeutralEnding" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="BadEnding"></label>
+        <textarea asp-for="BadEnding" class="form-control"></textarea>
+        <span asp-validation-for="BadEnding" class="text-danger"></span>
+    </div>
+
+    <div class="mt-3">
+        <button type="submit" name="action" value="back" formnovalidate class="btn btn-secondary">
+            ← Back
+        </button>
+
+        <button type="submit" name="action" value="save" class="btn btn-primary">
+            @(Model.IsEditMode ? "Save changes" : "Save")
+        </button>
+    </div>
+</form>

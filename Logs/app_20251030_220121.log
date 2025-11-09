@@ -1,0 +1,52 @@
+2025-10-30 22:01:22.079 +01:00 [INF] Applying migration '20251024065541_InitialCreate'.
+2025-10-30 22:01:22.643 +01:00 [INF] User profile is available. Using '/Users/michaelnedgaardisaksen/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-10-30 22:01:22.963 +01:00 [INF] Now listening on: https://localhost:7025
+2025-10-30 22:01:22.964 +01:00 [INF] Now listening on: http://localhost:5262
+2025-10-30 22:01:22.969 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-30 22:01:22.971 +01:00 [INF] Hosting environment: Development
+2025-10-30 22:01:22.973 +01:00 [INF] Content root path: /Users/michaelnedgaardisaksen/Documents/ITPE3100_Webapplikasjoner/Demo-Jam/Jam
+2025-10-30 22:01:23.368 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7025/ - null null
+2025-10-30 22:01:23.399 +01:00 [INF] Executing endpoint 'Jam.Controllers.HomeController.Index (Jam)'
+2025-10-30 22:01:23.418 +01:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller Jam.Controllers.HomeController (Jam).
+2025-10-30 22:01:23.591 +01:00 [INF] Executing ViewResult, running view Index.
+2025-10-30 22:01:23.631 +01:00 [INF] Executed ViewResult - view Index executed in 40.6975ms.
+2025-10-30 22:01:23.633 +01:00 [INF] Executed action Jam.Controllers.HomeController.Index (Jam) in 214.0897ms
+2025-10-30 22:01:23.633 +01:00 [INF] Executed endpoint 'Jam.Controllers.HomeController.Index (Jam)'
+2025-10-30 22:01:23.636 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7025/ - 200 null text/html; charset=utf-8 270.8721ms
+2025-10-30 22:01:28.202 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7025/StoryEditing/EditStory?storyId=1 - null null
+2025-10-30 22:01:28.206 +01:00 [INF] Executing endpoint 'Jam.Controllers.StoryEditingController.EditStory (Jam)'
+2025-10-30 22:01:28.221 +01:00 [INF] Route matched with {action = "EditStory", controller = "StoryEditing"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] EditStory(Int32) on controller Jam.Controllers.StoryEditingController (Jam).
+2025-10-30 22:01:28.268 +01:00 [INF] Executing ViewResult, running view EditStory.
+2025-10-30 22:01:28.319 +01:00 [INF] Executed ViewResult - view EditStory executed in 50.7207ms.
+2025-10-30 22:01:28.433 +01:00 [INF] Executed action Jam.Controllers.StoryEditingController.EditStory (Jam) in 211.6965ms
+2025-10-30 22:01:28.433 +01:00 [INF] Executed endpoint 'Jam.Controllers.StoryEditingController.EditStory (Jam)'
+2025-10-30 22:01:28.434 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7025/StoryEditing/EditStory?storyId=1 - 200 null text/html; charset=utf-8 232.3922ms
+2025-10-30 22:01:29.777 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7025/StoryEditing/EditQuestionScenes?storyId=1 - null null
+2025-10-30 22:01:29.783 +01:00 [INF] Executing endpoint 'Jam.Controllers.StoryEditingController.EditQuestionScenes (Jam)'
+2025-10-30 22:01:29.786 +01:00 [INF] Route matched with {action = "EditQuestionScenes", controller = "StoryEditing"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] EditQuestionScenes(Int32) on controller Jam.Controllers.StoryEditingController (Jam).
+2025-10-30 22:01:29.855 +01:00 [INF] Executing ViewResult, running view EditQuestionScenes.
+2025-10-30 22:01:29.902 +01:00 [INF] Executed ViewResult - view EditQuestionScenes executed in 46.6971ms.
+2025-10-30 22:01:29.902 +01:00 [INF] Executed action Jam.Controllers.StoryEditingController.EditQuestionScenes (Jam) in 115.6881ms
+2025-10-30 22:01:29.902 +01:00 [INF] Executed endpoint 'Jam.Controllers.StoryEditingController.EditQuestionScenes (Jam)'
+2025-10-30 22:01:29.902 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7025/StoryEditing/EditQuestionScenes?storyId=1 - 200 null text/html; charset=utf-8 124.7865ms
+2025-10-30 22:02:30.558 +01:00 [INF] Request starting HTTP/2 POST https://localhost:7025/StoryEditing/EditQuestionScenes - application/x-www-form-urlencoded 6282
+2025-10-30 22:02:30.563 +01:00 [INF] Executing endpoint 'Jam.Controllers.StoryEditingController.EditQuestionScenes (Jam)'
+2025-10-30 22:02:30.581 +01:00 [INF] Route matched with {action = "EditQuestionScenes", controller = "StoryEditing"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] EditQuestionScenes(System.Collections.Generic.List`1[Jam.ViewModels.EditQuestionScenesViewModel]) on controller Jam.Controllers.StoryEditingController (Jam).
+2025-10-30 22:02:30.620 +01:00 [WRN] [SceneRepository -> UpdateQuestionScenes] Scene 0 not found
+2025-10-30 22:02:30.623 +01:00 [WRN] [SceneRepository -> UpdateQuestionScenes] Scene 0 not found
+2025-10-30 22:02:30.624 +01:00 [WRN] [SceneRepository -> UpdateQuestionScenes] Scene 0 not found
+2025-10-30 22:02:30.626 +01:00 [WRN] [SceneRepository -> UpdateQuestionScenes] Scene 0 not found
+2025-10-30 22:02:30.632 +01:00 [INF] Executing RedirectResult, redirecting to /StoryEditing/EditStory?storyId=0.
+2025-10-30 22:02:30.635 +01:00 [INF] Executed action Jam.Controllers.StoryEditingController.EditQuestionScenes (Jam) in 53.5863ms
+2025-10-30 22:02:30.635 +01:00 [INF] Executed endpoint 'Jam.Controllers.StoryEditingController.EditQuestionScenes (Jam)'
+2025-10-30 22:02:30.635 +01:00 [INF] Request finished HTTP/2 POST https://localhost:7025/StoryEditing/EditQuestionScenes - 302 0 null 97.4867ms
+2025-10-30 22:02:30.641 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7025/StoryEditing/EditStory?storyId=0 - null null
+2025-10-30 22:02:30.641 +01:00 [INF] Executing endpoint 'Jam.Controllers.StoryEditingController.EditStory (Jam)'
+2025-10-30 22:02:30.641 +01:00 [INF] Route matched with {action = "EditStory", controller = "StoryEditing"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] EditStory(Int32) on controller Jam.Controllers.StoryEditingController (Jam).
+2025-10-30 22:02:30.641 +01:00 [WRN] [StoryRepository -> GetStoryById] Invalid story id 0 provided
+2025-10-30 22:02:30.667 +01:00 [WRN] [StoryEditingController -> EditStory:GET] Story not found for storyId=0
+2025-10-30 22:02:30.667 +01:00 [INF] Executing ViewResult, running view Error.
+2025-10-30 22:02:30.670 +01:00 [INF] Executed ViewResult - view Error executed in 2.92ms.
+2025-10-30 22:02:30.670 +01:00 [INF] Executed action Jam.Controllers.StoryEditingController.EditStory (Jam) in 29.0493ms
+2025-10-30 22:02:30.670 +01:00 [INF] Executed endpoint 'Jam.Controllers.StoryEditingController.EditStory (Jam)'
+2025-10-30 22:02:30.670 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7025/StoryEditing/EditStory?storyId=0 - 200 null text/html; charset=utf-8 29.3472ms

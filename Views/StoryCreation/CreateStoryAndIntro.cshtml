@@ -1,0 +1,51 @@
+
+@model Jam.ViewModels.StoryCreation.CreateStoryAndIntroViewModel
+
+<h2>Create Story and Introduction Scene</h2>
+
+<form asp-action="CreateStoryAndIntro" method="post">
+    <div class="form-group">
+        <label asp-for="Title"></label>
+        <input asp-for="Title" class="form-control" />
+        <span asp-validation-for="Title" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Description"></label>
+        <textarea asp-for="Description" class="form-control"></textarea>
+        <span asp-validation-for="Description" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="DifficultyLevel"></label>
+        <select asp-for="DifficultyLevel" asp-items="Model.DifficultyLevelOptions" class="form-select">
+            <option value="" disabled selected hidden>Select difficulty...</option>
+        </select>
+        <span asp-validation-for="DifficultyLevel" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Accessibility"></label>
+        <select asp-for="Accessibility" asp-items="Model.AccessibilityOptions" class="form-select">
+            <option value="" disabled selected hidden>Select accessibility...</option>
+        </select>
+        <span asp-validation-for="Accessibility" class="text-danger"></span>
+    </div>
+
+    <br />
+
+    <h5>Create Introduction Scene</h5>
+
+    <div class="form-group">
+        <label asp-for="IntroText"></label>
+        <textarea asp-for="IntroText" class="form-control"></textarea>
+        <span asp-validation-for="IntroText" class="text-danger"></span>
+    </div>
+
+<div class="mt-3">
+<button type="submit" name="action" value="cancel" formnovalidate class="btn btn-outline-danger">Cancel</button> 
+        <button type="submit" class="btn btn-primary">Next →</button>
+
+        
+    </div>
+
+</form>

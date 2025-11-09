@@ -1,0 +1,17 @@
+@using Jam.ViewModels.StoryPlaying
+@model FinishStoryViewModel
+
+<div class="container text-center mt-5">
+    <h1 class="display-4 mb-4">@Model.StoryTitle</h1>
+
+    <div class="card shadow p-4 mx-auto" style="max-width: 400px;">
+        <h4>Your Final Score</h4>
+        <p class="lead mb-0">
+            <strong>@Model.FinalScore</strong> / @Model.MaxScore
+        </p>
+    </div>
+
+    <form asp-action="FinishStory" method="post" class="mt-4">
+        <button type="submit" class="btn btn-primary px-4">Back to Home</button>
+    </form>
+</div>

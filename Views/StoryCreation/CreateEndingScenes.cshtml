@@ -1,0 +1,10 @@
+@model Jam.ViewModels.EndingScenesViewModel
+
+@{
+    ViewData["Title"] = "Create Endings";
+    Model.IsEditMode = false;
+}
+
+<h2>Create Endings</h2>
+
+<partial name="~/Views/Shared/_EndingScenesForm.cshtml" model="Model" />

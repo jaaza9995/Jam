@@ -1,0 +1,23 @@
+2025-10-29 15:25:09.590 +01:00 [INF] Applying migration '20251024065541_InitialCreate'.
+2025-10-29 15:25:10.169 +01:00 [INF] User profile is available. Using '/Users/michaelnedgaardisaksen/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-10-29 15:25:10.691 +01:00 [INF] Now listening on: https://localhost:7025
+2025-10-29 15:25:10.766 +01:00 [INF] Now listening on: http://localhost:5262
+2025-10-29 15:25:10.846 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-29 15:25:10.868 +01:00 [INF] Hosting environment: Development
+2025-10-29 15:25:10.869 +01:00 [INF] Content root path: /Users/michaelnedgaardisaksen/Documents/ITPE3100_Webapplikasjoner/Demo-Jam/Jam
+2025-10-29 15:25:11.045 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7025/ - null null
+2025-10-29 15:25:11.072 +01:00 [INF] Executing endpoint 'Jam.Controllers.HomeController.Index (Jam)'
+2025-10-29 15:25:11.111 +01:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller Jam.Controllers.HomeController (Jam).
+2025-10-29 15:25:11.418 +01:00 [INF] Executing ViewResult, running view Index.
+2025-10-29 15:25:11.488 +01:00 [INF] Executed ViewResult - view Index executed in 77.1359ms.
+2025-10-29 15:25:11.492 +01:00 [INF] Executed action Jam.Controllers.HomeController.Index (Jam) in 380.7985ms
+2025-10-29 15:25:11.493 +01:00 [INF] Executed endpoint 'Jam.Controllers.HomeController.Index (Jam)'
+2025-10-29 15:25:11.506 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7025/ - 200 null text/html; charset=utf-8 463.0848ms
+2025-10-29 15:25:14.940 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7025/StoryPlaying/SelectStory - null null
+2025-10-29 15:25:14.946 +01:00 [INF] Executing endpoint 'Jam.Controllers.StoryPlayingController.SelectStory (Jam)'
+2025-10-29 15:25:14.952 +01:00 [INF] Route matched with {action = "SelectStory", controller = "StoryPlaying"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SelectStory() on controller Jam.Controllers.StoryPlayingController (Jam).
+2025-10-29 15:25:15.001 +01:00 [INF] Executing ViewResult, running view SelectStory.
+2025-10-29 15:25:15.147 +01:00 [INF] Executed ViewResult - view SelectStory executed in 147.037ms.
+2025-10-29 15:25:15.148 +01:00 [INF] Executed action Jam.Controllers.StoryPlayingController.SelectStory (Jam) in 195.5913ms
+2025-10-29 15:25:15.148 +01:00 [INF] Executed endpoint 'Jam.Controllers.StoryPlayingController.SelectStory (Jam)'
+2025-10-29 15:25:15.148 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7025/StoryPlaying/SelectStory - 200 null text/html; charset=utf-8 208.3065ms

@@ -1,0 +1,35 @@
+2025-10-31 16:07:14.530 +01:00 [INF] Applying migration '20251024065541_InitialCreate'.
+2025-10-31 16:07:15.173 +01:00 [INF] User profile is available. Using '/Users/michaelnedgaardisaksen/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-10-31 16:07:15.382 +01:00 [INF] Now listening on: https://localhost:7025
+2025-10-31 16:07:15.382 +01:00 [INF] Now listening on: http://localhost:5262
+2025-10-31 16:07:15.386 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-31 16:07:15.387 +01:00 [INF] Hosting environment: Development
+2025-10-31 16:07:15.387 +01:00 [INF] Content root path: /Users/michaelnedgaardisaksen/Documents/ITPE3100_Webapplikasjoner/Demo-Jam/Jam
+2025-10-31 16:07:15.945 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7025/ - null null
+2025-10-31 16:07:15.956 +01:00 [INF] Executing endpoint 'Jam.Controllers.HomeController.Index (Jam)'
+2025-10-31 16:07:15.964 +01:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller Jam.Controllers.HomeController (Jam).
+2025-10-31 16:07:16.054 +01:00 [INF] Executing ViewResult, running view Index.
+2025-10-31 16:07:16.095 +01:00 [INF] Executed ViewResult - view Index executed in 41.123ms.
+2025-10-31 16:07:16.097 +01:00 [INF] Executed action Jam.Controllers.HomeController.Index (Jam) in 132.9612ms
+2025-10-31 16:07:16.097 +01:00 [INF] Executed endpoint 'Jam.Controllers.HomeController.Index (Jam)'
+2025-10-31 16:07:16.100 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7025/ - 200 null text/html; charset=utf-8 156.4517ms
+2025-10-31 16:07:16.331 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7025/js/jquery.validate.js - null null
+2025-10-31 16:07:16.332 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7025/js/jquery.validate.unobtrusive.js - null null
+2025-10-31 16:07:16.340 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7025/js/bootstrap.js - null null
+2025-10-31 16:07:16.340 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7025/js/jquery.min.js - null null
+2025-10-31 16:07:16.342 +01:00 [INF] The file /js/bootstrap.js was not modified
+2025-10-31 16:07:16.342 +01:00 [INF] The file /js/jquery.min.js was not modified
+2025-10-31 16:07:16.342 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7025/js/jquery.min.js - 304 null text/javascript 2.4428ms
+2025-10-31 16:07:16.342 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7025/js/bootstrap.js - 304 null text/javascript 2.5427ms
+2025-10-31 16:07:16.474 +01:00 [INF] Sending file. Request path: '/js/jquery.validate.unobtrusive.js'. Physical path: '/Users/michaelnedgaardisaksen/Documents/ITPE3100_Webapplikasjoner/Demo-Jam/Jam/wwwroot/js/jquery.validate.unobtrusive.js'
+2025-10-31 16:07:16.474 +01:00 [INF] Sending file. Request path: '/js/jquery.validate.js'. Physical path: '/Users/michaelnedgaardisaksen/Documents/ITPE3100_Webapplikasjoner/Demo-Jam/Jam/wwwroot/js/jquery.validate.js'
+2025-10-31 16:07:16.474 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7025/js/jquery.validate.unobtrusive.js - 200 19820 text/javascript 142.02ms
+2025-10-31 16:07:16.474 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7025/js/jquery.validate.js - 200 52536 text/javascript 143.0467ms
+2025-10-31 16:07:22.807 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7025/StoryCreation/CreateStoryAndIntro - null null
+2025-10-31 16:07:22.898 +01:00 [INF] Executing endpoint 'Jam.Controllers.StoryCreationController.CreateStoryAndIntro (Jam)'
+2025-10-31 16:07:22.900 +01:00 [INF] Route matched with {action = "CreateStoryAndIntro", controller = "StoryCreation"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreateStoryAndIntro() on controller Jam.Controllers.StoryCreationController (Jam).
+2025-10-31 16:07:22.906 +01:00 [INF] Executing ViewResult, running view CreateStoryAndIntro.
+2025-10-31 16:07:22.960 +01:00 [INF] Executed ViewResult - view CreateStoryAndIntro executed in 54.8979ms.
+2025-10-31 16:07:22.960 +01:00 [INF] Executed action Jam.Controllers.StoryCreationController.CreateStoryAndIntro (Jam) in 59.7956ms
+2025-10-31 16:07:22.960 +01:00 [INF] Executed endpoint 'Jam.Controllers.StoryCreationController.CreateStoryAndIntro (Jam)'
+2025-10-31 16:07:22.960 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7025/StoryCreation/CreateStoryAndIntro - 200 null text/html; charset=utf-8 153.6787ms

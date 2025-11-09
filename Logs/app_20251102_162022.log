@@ -1,0 +1,19 @@
+2025-11-02 16:20:22.432 +01:00 [INF] User profile is available. Using '/Users/michaelnedgaardisaksen/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-11-02 16:20:23.035 +01:00 [INF] Applying migration '20251024065541_InitialCreate'.
+2025-11-02 16:20:23.088 +01:00 [INF] Applying migration '20251101105657_AddIdentitySupport'.
+2025-11-02 16:20:24.002 +01:00 [INF] Now listening on: https://localhost:7025
+2025-11-02 16:20:24.003 +01:00 [INF] Now listening on: http://localhost:5262
+2025-11-02 16:20:24.033 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-02 16:20:24.034 +01:00 [INF] Hosting environment: Development
+2025-11-02 16:20:24.035 +01:00 [INF] Content root path: /Users/michaelnedgaardisaksen/Documents/ITPE3100_Webapplikasjoner/Demo-Jam/Jam
+2025-11-02 16:20:24.233 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7025/ - null null
+2025-11-02 16:20:24.258 +01:00 [INF] Executing endpoint 'Jam.Controllers.HomeController.Index (Jam)'
+2025-11-02 16:20:24.264 +01:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller Jam.Controllers.HomeController (Jam).
+2025-11-02 16:20:24.329 +01:00 [ERR] [HomeController -> Index] Unexpected error while loading home page.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Jam.Controllers.HomeController.Index() in /Users/michaelnedgaardisaksen/Documents/ITPE3100_Webapplikasjoner/Demo-Jam/Jam/Controllers/HomeController.cs:line 39
+2025-11-02 16:20:24.333 +01:00 [INF] Executing ViewResult, running view Error.
+2025-11-02 16:20:24.362 +01:00 [INF] Executed ViewResult - view Error executed in 29.3782ms.
+2025-11-02 16:20:24.362 +01:00 [INF] Executed action Jam.Controllers.HomeController.Index (Jam) in 98.0041ms
+2025-11-02 16:20:24.362 +01:00 [INF] Executed endpoint 'Jam.Controllers.HomeController.Index (Jam)'
+2025-11-02 16:20:24.365 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7025/ - 200 null text/html; charset=utf-8 133.9892ms

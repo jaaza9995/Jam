@@ -1,0 +1,48 @@
+@model IEnumerable<Story>
+@{
+    var questionCounts = ViewData["QuestionCounts"] as Dictionary<int, int>;
+}
+
+<h5>Your Stories:</h5>
+<div class="row g-4">
+    @foreach (var story in Model)
+    {
+        <div class="col-md-4">
+            <a asp-controller="StoryManagement" asp-action="StoryDetails" asp-route-storyId="@story.StoryId"
+               class="text-decoration-none text-dark">
+                <div class="card bg-light shadow-sm h-100 border-0 story-card hover-shadow">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">@story.Title</h5>
+                        <p class="card-text text-muted">@story.Description</p>
+                      
+                        <div class="mt-auto">
+                            <p><strong>Questions:</strong> @(questionCounts?[story.StoryId] ?? 0)</p>
+                            <span class="badge bg-primary me-2">@story.DifficultyLevel</span>
+                            <span class="badge bg-secondary">@story.Accessible</span>
+                        </div>
+                    </div>
+
+                    <div class="card-footer bg-transparent border-0 d-flex justify-content-between">
+                        <a asp-controller="StoryPlaying" asp-action="StartStory" asp-route-storyId="@story.StoryId"
+                            class="btn btn-sm btn-success">Play</a>
+
+                        <div>
+                            <a asp-controller="StoryEditing" asp-action="EditStory" asp-route-storyId="@story.StoryId"
+                                class="btn btn-sm btn-outline-primary me-2">Edit</a>
+
+                            <button type="button" class="btn btn-sm btn-outline-danger"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#deleteModal"
+                                    data-item-id="@story.StoryId"
+                                    data-item-name="@story.Title">
+                                Delete
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    }
+</div>
+
+@await Html.PartialAsync("_DeleteConfirmationModal", ("StoryManagement", "DeleteStory", "story", "storyId"))

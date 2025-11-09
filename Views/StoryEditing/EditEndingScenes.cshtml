@@ -1,0 +1,9 @@
+@model Jam.ViewModels.EndingScenesViewModel
+@{
+    ViewData["Title"] = "Edit Ending Scenes";
+    Model.IsEditMode = true;
+}
+
+<h2>Edit Ending Scenes</h2>
+
+<partial name="~/Views/Shared/_EndingScenesForm.cshtml" model="Model" />

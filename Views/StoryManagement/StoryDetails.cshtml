@@ -1,0 +1,38 @@
+@using Jam.Models.Enums
+@model Story
+
+@{
+    ViewData["Title"] = "Story Details";
+}
+
+<div class="container mt-4">
+    <div class="card shadow-sm border-0">
+        <div class="card-header bg-primary text-white">
+            <h4 class="mb-0">@Model.Title</h4>
+        </div>
+
+        <div class="card-body">
+            <p><strong>Description:</strong> @Model.Description</p>
+            <p><strong>Difficulty:</strong> @Model.DifficultyLevel</p>
+            <p><strong>Accessibility:</strong> @Model.Accessible</p>
+            @if (Model.Accessible == Accessibility.Private && !string.IsNullOrEmpty(Model.Code))
+            {
+                <p><strong>Access Code:</strong> <code>@Model.Code</code></p>
+            }
+
+            <hr />
+
+            <h5>Statistics</h5>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item"><strong>Played:</strong> @Model.Played</li>
+                <li class="list-group-item"><strong>Finished:</strong> @Model.Finished</li>
+                <li class="list-group-item"><strong>Failed:</strong> @Model.Failed</li>
+                <li class="list-group-item"><strong>Abandoned:</strong> @Model.Dnf</li>
+            </ul>
+        </div>
+
+        <div class="card-footer d-flex justify-content-between">
+            <a asp-controller="Home" asp-action="Index" class="btn btn-secondary">Back</a>
+        </div>
+    </div>
+</div>

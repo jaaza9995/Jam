@@ -1,0 +1,79 @@
+@model Jam.ViewModels.QuestionSceneBaseViewModel
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
+
+<div class="question-card mb-4 p-4 bg-light border rounded-3 shadow-sm">
+
+    <!-- Hidden fields for IDs (critical for Edit scenarios) -->
+    <input type="hidden" asp-for="StoryId" />
+    @if (Model is Jam.ViewModels.QuestionSceneBaseViewModel editModel)
+    {
+        <input type="hidden" name="@ViewData.TemplateInfo.GetFullHtmlFieldName(nameof(editModel.QuestionSceneId))"
+            value="@editModel.QuestionSceneId" />
+    }
+
+    <h4 class="mb-3">
+        @(Model.IsEditing ? "Edit Question Scene" : "New Question Scene")
+    </h4>
+
+    <!-- Story text / scene setup -->
+    <div class="mb-3">
+        <label asp-for="StoryText" class="form-label fw-bold"></label>
+        <textarea asp-for="StoryText" class="form-control" rows="3" placeholder="Set the scene..."></textarea>
+        <span asp-validation-for="StoryText" class="text-danger"></span>
+    </div>
+
+    <!-- Question prompt -->
+    <div class="mb-3">
+        <label asp-for="QuestionText" class="form-label fw-bold"></label>
+        <input asp-for="QuestionText" class="form-control" placeholder="Enter your question..." />
+        <span asp-validation-for="QuestionText" class="text-danger"></span>
+    </div>
+<!-- Answer options -->
+    <h5 class="mt-4">Answer Options</h5>
+
+    @for (int i = 0; i < Model.Answers.Count; i++)
+    {
+        <div class="card mb-2 p-2 bg-white border rounded-2">
+            <div class="d-flex align-items-center mb-2">
+                <label class="me-2">Answer @(i + 1):</label>
+                <input asp-for="Answers[i].AnswerText"
+                       class="form-control me-2"
+                       placeholder="Enter option text..." />
+                <span asp-validation-for="Answers[i].AnswerText" class="text-danger"></span>
+
+                <div class="form-check ms-2">
+                    <input type="radio"
+                           name="@ViewData.TemplateInfo.GetFullHtmlFieldName(nameof(Model.CorrectAnswerIndex))"
+                           value="@i"
+                           class="form-check-input"
+                           @(Model.CorrectAnswerIndex == i ? "checked" : "") />
+                    <label class="form-check-label">Correct</label>
+                </div>
+            </div>
+
+            <div>
+                <label asp-for="Answers[i].ContextText" class="form-label">Follow-up text:</label>
+                <input asp-for="Answers[i].ContextText"
+                       class="form-control"
+                       placeholder="Feedback when chosen..." />
+                <span asp-validation-for="Answers[i].ContextText" class="text-danger"></span>
+            </div>
+        </div>
+        
+    <!-- Validation for missing correct answer -->
+    <div>
+        <span asp-validation-for="CorrectAnswerIndex" class="text-danger"></span>
+    </div>
+    }
+</div>
+<button type="submit"
+        name="deleteIndex"
+        value="@ViewData.TemplateInfo.HtmlFieldPrefix.Replace("QuestionScenes[", "").Replace("]", "")"
+        formaction="@Url.Action("DeleteQuestionInline", "StoryCreation")"
+        formmethod="post"
+        class="btn btn-sm btn-outline-danger mt-2"
+        formnovalidate>
+    <i class="bi bi-trash"></i> Delete Question
+</button>

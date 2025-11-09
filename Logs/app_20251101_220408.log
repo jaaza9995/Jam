@@ -1,0 +1,29 @@
+2025-11-01 22:04:08.536 +01:00 [INF] User profile is available. Using '/Users/michaelnedgaardisaksen/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-11-01 22:04:09.224 +01:00 [INF] No migrations were applied. The database is already up to date.
+2025-11-01 22:04:09.812 +01:00 [INF] Now listening on: https://localhost:7025
+2025-11-01 22:04:09.813 +01:00 [INF] Now listening on: http://localhost:5262
+2025-11-01 22:04:09.818 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-01 22:04:09.820 +01:00 [INF] Hosting environment: Development
+2025-11-01 22:04:09.820 +01:00 [INF] Content root path: /Users/michaelnedgaardisaksen/Documents/ITPE3100_Webapplikasjoner/Demo-Jam/Jam
+2025-11-01 22:04:10.134 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7025/ - null null
+2025-11-01 22:04:10.171 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-11-01 22:04:10.184 +01:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2025-11-01 22:04:10.186 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7025/ - 302 0 null 53.4254ms
+2025-11-01 22:04:10.207 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7025/Identity/Account/Login?ReturnUrl=%2F - null null
+2025-11-01 22:04:10.214 +01:00 [INF] Executing endpoint '/Account/Login'
+2025-11-01 22:04:10.234 +01:00 [INF] Route matched with {page = "/Account/Login", area = "Identity", action = "", controller = ""}. Executing page /Account/Login
+2025-11-01 22:04:10.250 +01:00 [INF] Executing handler method Jam.Areas.Identity.Pages.Account.LoginModel.OnGetAsync - ModelState is "Valid"
+2025-11-01 22:04:10.253 +01:00 [INF] AuthenticationScheme: Identity.External signed out.
+2025-11-01 22:04:10.253 +01:00 [INF] Executed handler method OnGetAsync, returned result .
+2025-11-01 22:04:10.255 +01:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2025-11-01 22:04:10.255 +01:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2025-11-01 22:04:10.336 +01:00 [INF] Executed page /Account/Login in 98.2953ms
+2025-11-01 22:04:10.336 +01:00 [INF] Executed endpoint '/Account/Login'
+2025-11-01 22:04:10.339 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7025/Identity/Account/Login?ReturnUrl=%2F - 200 null text/html; charset=utf-8 132.0539ms
+2025-11-01 22:04:10.360 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7025/lib/jquery-validation/dist/jquery.validate.min.js - null null
+2025-11-01 22:04:10.361 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7025/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js - null null
+2025-11-01 22:04:10.363 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7025/lib/jquery-validation/dist/jquery.validate.min.js - 404 0 null 3.2249ms
+2025-11-01 22:04:10.363 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7025/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js - 404 0 null 2.5108ms
+2025-11-01 22:04:10.364 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7025/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js, Response status code: 404
+2025-11-01 22:04:10.364 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7025/lib/jquery-validation/dist/jquery.validate.min.js, Response status code: 404

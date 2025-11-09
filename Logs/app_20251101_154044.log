@@ -1,0 +1,19 @@
+2025-11-01 15:40:45.184 +01:00 [INF] User profile is available. Using '/Users/michaelnedgaardisaksen/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-11-01 15:40:45.969 +01:00 [INF] Applying migration '20251024065541_InitialCreate'.
+2025-11-01 15:40:46.005 +01:00 [INF] Applying migration '20251101105657_AddIdentitySupport'.
+2025-11-01 15:40:47.039 +01:00 [INF] Now listening on: https://localhost:7025
+2025-11-01 15:40:47.062 +01:00 [INF] Now listening on: http://localhost:5262
+2025-11-01 15:40:47.079 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-01 15:40:47.082 +01:00 [INF] Hosting environment: Development
+2025-11-01 15:40:47.083 +01:00 [INF] Content root path: /Users/michaelnedgaardisaksen/Documents/ITPE3100_Webapplikasjoner/Demo-Jam/Jam
+2025-11-01 15:40:47.383 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7025/ - null null
+2025-11-01 15:40:47.401 +01:00 [INF] Executing endpoint 'Jam.Controllers.HomeController.Index (Jam)'
+2025-11-01 15:40:47.410 +01:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller Jam.Controllers.HomeController (Jam).
+2025-11-01 15:40:47.414 +01:00 [WRN] [HomeController -> Index] User not logged in, redirecting to Login page.
+2025-11-01 15:40:47.422 +01:00 [INF] Executing RedirectResult, redirecting to /Account/Login.
+2025-11-01 15:40:47.425 +01:00 [INF] Executed action Jam.Controllers.HomeController.Index (Jam) in 12.6787ms
+2025-11-01 15:40:47.426 +01:00 [INF] Executed endpoint 'Jam.Controllers.HomeController.Index (Jam)'
+2025-11-01 15:40:47.427 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7025/ - 302 0 null 45.74ms
+2025-11-01 15:40:47.442 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7025/Account/Login - null null
+2025-11-01 15:40:47.443 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7025/Account/Login - 404 0 null 1.5727ms
+2025-11-01 15:40:47.446 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7025/Account/Login, Response status code: 404

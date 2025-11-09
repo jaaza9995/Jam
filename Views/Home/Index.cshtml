@@ -1,0 +1,22 @@
+@model HomeViewModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome back @Model.FirstName</h1>
+
+    <p>
+        <a class="btn btn-secondary" asp-controller="StoryCreation" asp-action="CreateStoryAndIntro">Create New Story</a>
+    </p>
+
+    <p>
+        <a class="btn btn-secondary" asp-controller="StoryPlaying" asp-action="SelectStory">Play New Story</a>
+    </p>
+
+    @await Html.PartialAsync("_YourStoriesPartial", Model.YourGames)
+
+    <br /><br />
+    
+    @await Html.PartialAsync("_RecentlyPlayedPartial", Model.RecentlyPlayed)
+</div>

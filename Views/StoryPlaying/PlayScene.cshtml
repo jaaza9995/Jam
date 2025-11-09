@@ -1,0 +1,58 @@
+@using Jam.Models.Enums
+@using Jam.ViewModels.StoryPlaying
+@model PlaySceneViewModel
+
+<div class="scene-container">
+
+    <p>Your current level: @Model.CurrentLevel</p>
+    <p>@Model.SceneText</p>
+
+    <form asp-action="PlayScene" method="post">
+
+        <input type="hidden" asp-for="SessionId" />
+        <input type="hidden" asp-for="SceneId"/>
+        <input type="hidden" asp-for="SceneText" />
+        <input type="hidden" asp-for="SceneType"/>
+        <input type="hidden" asp-for="AnswerRandomSeed" />
+        <input type="hidden" asp-for="CurrentScore"/>
+        <input type="hidden" asp-for="CurrentLevel"/>
+
+        @if (Model.SceneType == SceneType.Intro)
+        {
+            <button type="submit" class="btn btn-primary">Continue</button>
+        }
+        else if (Model.SceneType == SceneType.Question)
+        {
+            <h3>@Model.Question</h3>
+
+            @foreach (var answer in Model.AnswerOptions ?? new List<AnswerOption>())
+            {
+                <div class="form-check">
+                    <input 
+                        type="radio" 
+                        name="SelectedAnswerId"
+                        value="@answer.AnswerOptionId" 
+                        id="opt_@answer.AnswerOptionId" 
+                        @(Model.SceneType == SceneType.Question ? "required" : "")
+                    />
+
+                    <label class="form-check-label" for="opt_@answer.AnswerOptionId">@answer.Answer</label>
+                </div>
+            }
+
+            <span asp-validation-for="SelectedAnswerId" class="text-danger"></span><br />
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+        }
+        else if (Model.SceneType == SceneType.Ending) 
+        {
+            <button type="submit" class="btn btn-success">See Results</button>
+        }
+
+    </form>
+
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

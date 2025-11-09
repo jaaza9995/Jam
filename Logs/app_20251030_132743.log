@@ -1,0 +1,33 @@
+2025-10-30 13:27:44.249 +01:00 [INF] Applying migration '20251024065541_InitialCreate'.
+2025-10-30 13:27:44.948 +01:00 [INF] User profile is available. Using '/Users/michaelnedgaardisaksen/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-10-30 13:27:45.408 +01:00 [INF] Now listening on: https://localhost:7025
+2025-10-30 13:27:45.409 +01:00 [INF] Now listening on: http://localhost:5262
+2025-10-30 13:27:45.412 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-30 13:27:45.413 +01:00 [INF] Hosting environment: Development
+2025-10-30 13:27:45.413 +01:00 [INF] Content root path: /Users/michaelnedgaardisaksen/Documents/ITPE3100_Webapplikasjoner/Demo-Jam/Jam
+2025-10-30 13:27:45.762 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7025/ - null null
+2025-10-30 13:27:45.773 +01:00 [INF] Executing endpoint 'Jam.Controllers.HomeController.Index (Jam)'
+2025-10-30 13:27:45.812 +01:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller Jam.Controllers.HomeController (Jam).
+2025-10-30 13:27:45.900 +01:00 [INF] Executing ViewResult, running view Index.
+2025-10-30 13:27:45.939 +01:00 [INF] Executed ViewResult - view Index executed in 38.6614ms.
+2025-10-30 13:27:45.941 +01:00 [INF] Executed action Jam.Controllers.HomeController.Index (Jam) in 127.9033ms
+2025-10-30 13:27:45.941 +01:00 [INF] Executed endpoint 'Jam.Controllers.HomeController.Index (Jam)'
+2025-10-30 13:27:45.944 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7025/ - 200 null text/html; charset=utf-8 182.6273ms
+2025-10-30 13:27:53.308 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7025/StoryEditing/EditStory?storyId=1 - null null
+2025-10-30 13:27:53.312 +01:00 [INF] Executing endpoint 'Jam.Controllers.StoryEditingController.EditStory (Jam)'
+2025-10-30 13:27:53.327 +01:00 [INF] Route matched with {action = "EditStory", controller = "StoryEditing"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] EditStory(Int32) on controller Jam.Controllers.StoryEditingController (Jam).
+2025-10-30 13:27:53.373 +01:00 [INF] Executing ViewResult, running view EditStory.
+2025-10-30 13:27:53.448 +01:00 [INF] Executed ViewResult - view EditStory executed in 75.0667ms.
+2025-10-30 13:27:53.448 +01:00 [INF] Executed action Jam.Controllers.StoryEditingController.EditStory (Jam) in 120.6282ms
+2025-10-30 13:27:53.448 +01:00 [INF] Executed endpoint 'Jam.Controllers.StoryEditingController.EditStory (Jam)'
+2025-10-30 13:27:53.448 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7025/StoryEditing/EditStory?storyId=1 - 200 null text/html; charset=utf-8 140.5921ms
+2025-10-30 13:28:13.371 +01:00 [INF] Request starting HTTP/2 POST https://localhost:7025/StoryEditing/EditStory - application/x-www-form-urlencoded 418
+2025-10-30 13:28:13.503 +01:00 [INF] Executing endpoint 'Jam.Controllers.StoryEditingController.EditStory (Jam)'
+2025-10-30 13:28:13.515 +01:00 [INF] Route matched with {action = "EditStory", controller = "StoryEditing"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] EditStory(Jam.ViewModels.StoryEditing.EditStoryViewModel) on controller Jam.Controllers.StoryEditingController (Jam).
+2025-10-30 13:28:13.566 +01:00 [INF] Executing RedirectResult, redirecting to /StoryEditing/Edit?storyId=1.
+2025-10-30 13:28:13.566 +01:00 [INF] Executed action Jam.Controllers.StoryEditingController.EditStory (Jam) in 51.2854ms
+2025-10-30 13:28:13.566 +01:00 [INF] Executed endpoint 'Jam.Controllers.StoryEditingController.EditStory (Jam)'
+2025-10-30 13:28:13.566 +01:00 [INF] Request finished HTTP/2 POST https://localhost:7025/StoryEditing/EditStory - 302 0 null 195.2507ms
+2025-10-30 13:28:13.596 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7025/StoryEditing/Edit?storyId=1 - null null
+2025-10-30 13:28:13.596 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7025/StoryEditing/Edit?storyId=1 - 404 0 null 0.7954ms
+2025-10-30 13:28:13.597 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7025/StoryEditing/Edit, Response status code: 404

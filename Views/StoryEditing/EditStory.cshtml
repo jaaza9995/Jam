@@ -1,0 +1,65 @@
+@using Jam.Models.Enums;
+@using Jam.ViewModels.StoryEditing;
+@model EditStoryViewModel
+
+<h2>Edit Story: @Model.Title</h2>
+
+<form asp-action="EditStory" method="post">
+
+    @Html.AntiForgeryToken()
+
+    <input asp-for="StoryId" type="hidden" />
+
+    <div class="mb-3">
+        <label asp-for="Title" class="form-label"></label>
+        <input asp-for="Title" class="form-control" />
+        <span asp-validation-for="Title" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Description" class="form-label"></label>
+        <textarea asp-for="Description" class="form-control"></textarea>
+        <span asp-validation-for="Description" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="DifficultyLevel" class="form-label"></label>
+        <select asp-for="DifficultyLevel" asp-items="Html.GetEnumSelectList<DifficultyLevel>()"
+            class="form-control"></select>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Accessibility" class="form-label"></label>
+        <select asp-for="Accessibility" asp-items="Html.GetEnumSelectList<Accessibility>()"
+            class="form-control"></select>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Save Changes</button>
+        <a asp-controller="Home"
+        asp-action="Index"
+        class="btn btn-outline-secondary ms-2">
+            ← Back
+        </a>
+
+</form>
+
+<hr />
+
+<div class="d-flex gap-3 my-4">
+
+    <a asp-controller="StoryEditing" asp-action="EditIntroScene" asp-route-storyId="@Model.StoryId"
+        class="btn btn-primary">
+        Edit Intro Scene
+    </a>
+
+    <a asp-controller="StoryEditing" asp-action="EditQuestionScenes" asp-route-storyId="@Model.StoryId"
+        class="btn btn-primary">
+        Edit Question Scenes
+    </a>
+
+    <a asp-controller="StoryEditing" asp-action="EditEndingScenes" asp-route-storyId="@Model.StoryId" 
+        class="btn btn-primary">
+        Edit Ending Scenes
+    </a>
+
+</div>

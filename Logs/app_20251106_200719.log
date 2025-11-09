@@ -1,0 +1,230 @@
+2025-11-06 20:07:19.693 +01:00 [INF] User profile is available. Using '/Users/jaraazad/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-11-06 20:07:20.248 +01:00 [INF] Applying migration '20251024065541_InitialCreate'.
+2025-11-06 20:07:20.307 +01:00 [INF] Applying migration '20251101105657_AddIdentitySupport'.
+2025-11-06 20:07:20.366 +01:00 [INF] Applying migration '20251103080324_UpdateNextQuestionSceneDeleteBehavior'.
+2025-11-06 20:07:21.532 +01:00 [INF] Now listening on: https://localhost:7025
+2025-11-06 20:07:21.532 +01:00 [INF] Now listening on: http://localhost:5262
+2025-11-06 20:07:21.537 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-06 20:07:21.538 +01:00 [INF] Hosting environment: Development
+2025-11-06 20:07:21.539 +01:00 [INF] Content root path: /Users/jaraazad/Desktop/Jam
+2025-11-06 20:07:21.950 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7025/ - null null
+2025-11-06 20:07:21.972 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-11-06 20:07:21.976 +01:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2025-11-06 20:07:21.978 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7025/ - 302 0 null 29.1415ms
+2025-11-06 20:07:21.991 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7025/Identity/Account/Login?ReturnUrl=%2F - null null
+2025-11-06 20:07:22.025 +01:00 [INF] Executing endpoint '/Account/Login'
+2025-11-06 20:07:22.044 +01:00 [INF] Route matched with {page = "/Account/Login", area = "Identity", action = "", controller = ""}. Executing page /Account/Login
+2025-11-06 20:07:22.057 +01:00 [INF] Executing handler method Jam.Areas.Identity.Pages.Account.LoginModel.OnGetAsync - ModelState is "Valid"
+2025-11-06 20:07:22.062 +01:00 [INF] AuthenticationScheme: Identity.External signed out.
+2025-11-06 20:07:22.062 +01:00 [INF] Executed handler method OnGetAsync, returned result .
+2025-11-06 20:07:22.064 +01:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2025-11-06 20:07:22.064 +01:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2025-11-06 20:07:22.124 +01:00 [INF] Executed page /Account/Login in 76.5297ms
+2025-11-06 20:07:22.125 +01:00 [INF] Executed endpoint '/Account/Login'
+2025-11-06 20:07:22.128 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7025/Identity/Account/Login?ReturnUrl=%2F - 200 null text/html; charset=utf-8 136.81ms
+2025-11-06 20:07:22.177 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7025/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js - null null
+2025-11-06 20:07:22.177 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7025/lib/jquery-validation/dist/jquery.validate.min.js - null null
+2025-11-06 20:07:22.181 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7025/lib/jquery-validation/dist/jquery.validate.min.js - 404 0 null 4.0235ms
+2025-11-06 20:07:22.181 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7025/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js - 404 0 null 3.995ms
+2025-11-06 20:07:22.182 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7025/lib/jquery-validation/dist/jquery.validate.min.js, Response status code: 404
+2025-11-06 20:07:22.182 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7025/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js, Response status code: 404
+2025-11-06 20:07:23.217 +01:00 [INF] Request starting HTTP/2 POST https://localhost:7025/Identity/Account/Login?ReturnUrl=%2F - application/x-www-form-urlencoded 236
+2025-11-06 20:07:23.223 +01:00 [INF] Executing endpoint '/Account/Login'
+2025-11-06 20:07:23.223 +01:00 [INF] Route matched with {page = "/Account/Login", area = "Identity", action = "", controller = ""}. Executing page /Account/Login
+2025-11-06 20:07:23.246 +01:00 [INF] Executing handler method Jam.Areas.Identity.Pages.Account.LoginModel.OnPostAsync - ModelState is "Valid"
+2025-11-06 20:07:23.361 +01:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2025-11-06 20:07:23.361 +01:00 [INF] User logged in.
+2025-11-06 20:07:23.362 +01:00 [INF] Executed handler method OnPostAsync, returned result Microsoft.AspNetCore.Mvc.LocalRedirectResult.
+2025-11-06 20:07:23.362 +01:00 [INF] Executing LocalRedirectResult, redirecting to /.
+2025-11-06 20:07:23.362 +01:00 [INF] Executed page /Account/Login in 139.0625ms
+2025-11-06 20:07:23.362 +01:00 [INF] Executed endpoint '/Account/Login'
+2025-11-06 20:07:23.364 +01:00 [INF] Request finished HTTP/2 POST https://localhost:7025/Identity/Account/Login?ReturnUrl=%2F - 302 0 null 147.2724ms
+2025-11-06 20:07:23.368 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7025/ - null null
+2025-11-06 20:07:23.372 +01:00 [INF] Executing endpoint 'Jam.Controllers.HomeController.Index (Jam)'
+2025-11-06 20:07:23.377 +01:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller Jam.Controllers.HomeController (Jam).
+2025-11-06 20:07:23.447 +01:00 [INF] Executing ViewResult, running view Index.
+2025-11-06 20:07:23.463 +01:00 [INF] Executed ViewResult - view Index executed in 16.6726ms.
+2025-11-06 20:07:23.464 +01:00 [INF] Executed action Jam.Controllers.HomeController.Index (Jam) in 86.4334ms
+2025-11-06 20:07:23.464 +01:00 [INF] Executed endpoint 'Jam.Controllers.HomeController.Index (Jam)'
+2025-11-06 20:07:23.464 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7025/ - 200 null text/html; charset=utf-8 95.5814ms
+2025-11-06 20:07:26.136 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7025/StoryEditing/EditStory?storyId=1 - null null
+2025-11-06 20:07:26.166 +01:00 [INF] Executing endpoint 'Jam.Controllers.StoryEditingController.EditStory (Jam)'
+2025-11-06 20:07:26.173 +01:00 [INF] Route matched with {action = "EditStory", controller = "StoryEditing", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] EditStory(Int32) on controller Jam.Controllers.StoryEditingController (Jam).
+2025-11-06 20:07:26.190 +01:00 [INF] Executing ViewResult, running view EditStory.
+2025-11-06 20:07:26.298 +01:00 [INF] Executed ViewResult - view EditStory executed in 109.4144ms.
+2025-11-06 20:07:26.368 +01:00 [INF] Executed action Jam.Controllers.StoryEditingController.EditStory (Jam) in 194.4271ms
+2025-11-06 20:07:26.368 +01:00 [INF] Executed endpoint 'Jam.Controllers.StoryEditingController.EditStory (Jam)'
+2025-11-06 20:07:26.368 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7025/StoryEditing/EditStory?storyId=1 - 200 null text/html; charset=utf-8 232.606ms
+2025-11-06 20:07:27.073 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7025/StoryEditing/EditQuestionScenes?storyId=1 - null null
+2025-11-06 20:07:27.076 +01:00 [INF] Executing endpoint 'Jam.Controllers.StoryEditingController.EditQuestionScenes (Jam)'
+2025-11-06 20:07:27.079 +01:00 [INF] Route matched with {action = "EditQuestionScenes", controller = "StoryEditing", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] EditQuestionScenes(Int32) on controller Jam.Controllers.StoryEditingController (Jam).
+2025-11-06 20:07:27.142 +01:00 [INF] Executing ViewResult, running view EditQuestionScenes.
+2025-11-06 20:07:27.339 +01:00 [INF] Executed ViewResult - view EditQuestionScenes executed in 197.6325ms.
+2025-11-06 20:07:27.364 +01:00 [INF] Executed action Jam.Controllers.StoryEditingController.EditQuestionScenes (Jam) in 285.4508ms
+2025-11-06 20:07:27.364 +01:00 [INF] Executed endpoint 'Jam.Controllers.StoryEditingController.EditQuestionScenes (Jam)'
+2025-11-06 20:07:27.365 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7025/StoryEditing/EditQuestionScenes?storyId=1 - 200 null text/html; charset=utf-8 291.6752ms
+2025-11-06 20:07:30.636 +01:00 [INF] Request starting HTTP/2 POST https://localhost:7025/StoryEditing/DeleteQuestion?storyId=1&questionSceneId=3 - application/x-www-form-urlencoded 225
+2025-11-06 20:07:30.640 +01:00 [INF] Executing endpoint 'Jam.Controllers.StoryEditingController.DeleteQuestion (Jam)'
+2025-11-06 20:07:30.650 +01:00 [INF] Route matched with {action = "DeleteQuestion", controller = "StoryEditing", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteQuestion(Int32, Int32) on controller Jam.Controllers.StoryEditingController (Jam).
+2025-11-06 20:07:30.710 +01:00 [ERR] An exception occurred in the database while saving changes for context type 'Jam.DAL.StoryDbContext'.
+System.InvalidOperationException: Unable to save changes because a circular dependency was detected in the data to be saved: 'QuestionScene [Modified] ForeignKeyConstraint { 'NextQuestionSceneId' } <-
+QuestionScene [Deleted] Index { 'NextQuestionSceneId' } <-
+QuestionScene [Modified]To show additional information call 'DbContextOptionsBuilder.EnableSensitiveDataLogging'.'.
+   at Microsoft.EntityFrameworkCore.Utilities.Multigraph`2.ThrowCycle(List`1 cycle, Func`2 formatCycle, Func`2 formatException)
+   at Microsoft.EntityFrameworkCore.Utilities.Multigraph`2.TopologicalSortCore(Boolean withBatching, Func`4 canBreakEdges, Func`2 formatCycle, Func`2 formatException)
+   at Microsoft.EntityFrameworkCore.Utilities.Multigraph`2.BatchingTopologicalSort(Func`4 canBreakEdges, Func`2 formatCycle, Func`2 formatException)
+   at Microsoft.EntityFrameworkCore.Update.Internal.CommandBatchPreparer.TopologicalSort(IEnumerable`1 commands)
+   at Microsoft.EntityFrameworkCore.Update.Internal.CommandBatchPreparer.BatchCommands(IList`1 entries, IUpdateAdapter updateAdapter)+MoveNext()
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+System.InvalidOperationException: Unable to save changes because a circular dependency was detected in the data to be saved: 'QuestionScene [Modified] ForeignKeyConstraint { 'NextQuestionSceneId' } <-
+QuestionScene [Deleted] Index { 'NextQuestionSceneId' } <-
+QuestionScene [Modified]To show additional information call 'DbContextOptionsBuilder.EnableSensitiveDataLogging'.'.
+   at Microsoft.EntityFrameworkCore.Utilities.Multigraph`2.ThrowCycle(List`1 cycle, Func`2 formatCycle, Func`2 formatException)
+   at Microsoft.EntityFrameworkCore.Utilities.Multigraph`2.TopologicalSortCore(Boolean withBatching, Func`4 canBreakEdges, Func`2 formatCycle, Func`2 formatException)
+   at Microsoft.EntityFrameworkCore.Utilities.Multigraph`2.BatchingTopologicalSort(Func`4 canBreakEdges, Func`2 formatCycle, Func`2 formatException)
+   at Microsoft.EntityFrameworkCore.Update.Internal.CommandBatchPreparer.TopologicalSort(IEnumerable`1 commands)
+   at Microsoft.EntityFrameworkCore.Update.Internal.CommandBatchPreparer.BatchCommands(IList`1 entries, IUpdateAdapter updateAdapter)+MoveNext()
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2025-11-06 20:07:30.783 +01:00 [ERR] [SceneRepository -> DeleteQuestionScene] Error deleting scene 3
+System.InvalidOperationException: Unable to save changes because a circular dependency was detected in the data to be saved: 'QuestionScene [Modified] ForeignKeyConstraint { 'NextQuestionSceneId' } <-
+QuestionScene [Deleted] Index { 'NextQuestionSceneId' } <-
+QuestionScene [Modified]To show additional information call 'DbContextOptionsBuilder.EnableSensitiveDataLogging'.'.
+   at Microsoft.EntityFrameworkCore.Utilities.Multigraph`2.ThrowCycle(List`1 cycle, Func`2 formatCycle, Func`2 formatException)
+   at Microsoft.EntityFrameworkCore.Utilities.Multigraph`2.TopologicalSortCore(Boolean withBatching, Func`4 canBreakEdges, Func`2 formatCycle, Func`2 formatException)
+   at Microsoft.EntityFrameworkCore.Utilities.Multigraph`2.BatchingTopologicalSort(Func`4 canBreakEdges, Func`2 formatCycle, Func`2 formatException)
+   at Microsoft.EntityFrameworkCore.Update.Internal.CommandBatchPreparer.TopologicalSort(IEnumerable`1 commands)
+   at Microsoft.EntityFrameworkCore.Update.Internal.CommandBatchPreparer.BatchCommands(IList`1 entries, IUpdateAdapter updateAdapter)+MoveNext()
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Jam.DAL.SceneDAL.SceneRepository.DeleteQuestionScene(Int32 questionSceneId, Nullable`1 previousSceneId) in /Users/jaraazad/Desktop/Jam/DAL/SceneDAL/SceneRepository.cs:line 452
+2025-11-06 20:07:30.786 +01:00 [INF] Executing RedirectResult, redirecting to /StoryEditing/EditQuestionScenes?storyId=1.
+2025-11-06 20:07:30.786 +01:00 [INF] Executed action Jam.Controllers.StoryEditingController.DeleteQuestion (Jam) in 135.4775ms
+2025-11-06 20:07:30.786 +01:00 [INF] Executed endpoint 'Jam.Controllers.StoryEditingController.DeleteQuestion (Jam)'
+2025-11-06 20:07:30.786 +01:00 [INF] Request finished HTTP/2 POST https://localhost:7025/StoryEditing/DeleteQuestion?storyId=1&questionSceneId=3 - 302 0 null 150.5195ms
+2025-11-06 20:07:30.817 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7025/StoryEditing/EditQuestionScenes?storyId=1 - null null
+2025-11-06 20:07:30.818 +01:00 [INF] Executing endpoint 'Jam.Controllers.StoryEditingController.EditQuestionScenes (Jam)'
+2025-11-06 20:07:30.818 +01:00 [INF] Route matched with {action = "EditQuestionScenes", controller = "StoryEditing", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] EditQuestionScenes(Int32) on controller Jam.Controllers.StoryEditingController (Jam).
+2025-11-06 20:07:30.824 +01:00 [INF] Executing ViewResult, running view EditQuestionScenes.
+2025-11-06 20:07:30.961 +01:00 [INF] Executed ViewResult - view EditQuestionScenes executed in 136.9533ms.
+2025-11-06 20:07:30.961 +01:00 [INF] Executed action Jam.Controllers.StoryEditingController.EditQuestionScenes (Jam) in 142.583ms
+2025-11-06 20:07:30.961 +01:00 [INF] Executed endpoint 'Jam.Controllers.StoryEditingController.EditQuestionScenes (Jam)'
+2025-11-06 20:07:30.961 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7025/StoryEditing/EditQuestionScenes?storyId=1 - 200 null text/html; charset=utf-8 143.9011ms
+2025-11-06 20:07:36.528 +01:00 [INF] Request starting HTTP/2 POST https://localhost:7025/StoryEditing/DeleteQuestion?storyId=1&questionSceneId=1 - application/x-www-form-urlencoded 225
+2025-11-06 20:07:36.530 +01:00 [INF] Executing endpoint 'Jam.Controllers.StoryEditingController.DeleteQuestion (Jam)'
+2025-11-06 20:07:36.531 +01:00 [INF] Route matched with {action = "DeleteQuestion", controller = "StoryEditing", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteQuestion(Int32, Int32) on controller Jam.Controllers.StoryEditingController (Jam).
+2025-11-06 20:07:36.558 +01:00 [INF] [SceneRepository -> DeleteQuestionScene] Deleted scene 1, linked previous=2 → next=null
+2025-11-06 20:07:36.558 +01:00 [INF] Executing RedirectResult, redirecting to /StoryEditing/EditQuestionScenes?storyId=1.
+2025-11-06 20:07:36.559 +01:00 [INF] Executed action Jam.Controllers.StoryEditingController.DeleteQuestion (Jam) in 27.9412ms
+2025-11-06 20:07:36.559 +01:00 [INF] Executed endpoint 'Jam.Controllers.StoryEditingController.DeleteQuestion (Jam)'
+2025-11-06 20:07:36.559 +01:00 [INF] Request finished HTTP/2 POST https://localhost:7025/StoryEditing/DeleteQuestion?storyId=1&questionSceneId=1 - 302 0 null 31.1382ms
+2025-11-06 20:07:36.565 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7025/StoryEditing/EditQuestionScenes?storyId=1 - null null
+2025-11-06 20:07:36.591 +01:00 [INF] Executing endpoint 'Jam.Controllers.StoryEditingController.EditQuestionScenes (Jam)'
+2025-11-06 20:07:36.591 +01:00 [INF] Route matched with {action = "EditQuestionScenes", controller = "StoryEditing", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] EditQuestionScenes(Int32) on controller Jam.Controllers.StoryEditingController (Jam).
+2025-11-06 20:07:36.598 +01:00 [INF] Executing ViewResult, running view EditQuestionScenes.
+2025-11-06 20:07:36.764 +01:00 [INF] Executed ViewResult - view EditQuestionScenes executed in 166.4667ms.
+2025-11-06 20:07:36.787 +01:00 [INF] Executed action Jam.Controllers.StoryEditingController.EditQuestionScenes (Jam) in 196.0342ms
+2025-11-06 20:07:36.834 +01:00 [INF] Executed endpoint 'Jam.Controllers.StoryEditingController.EditQuestionScenes (Jam)'
+2025-11-06 20:07:36.835 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7025/StoryEditing/EditQuestionScenes?storyId=1 - 200 null text/html; charset=utf-8 270.3739ms
+2025-11-06 20:07:52.064 +01:00 [INF] Request starting HTTP/2 POST https://localhost:7025/StoryEditing/EditQuestionScenes - application/x-www-form-urlencoded 5417
+2025-11-06 20:07:52.120 +01:00 [INF] Executing endpoint 'Jam.Controllers.StoryEditingController.EditQuestionScenes (Jam)'
+2025-11-06 20:07:52.131 +01:00 [INF] Route matched with {action = "EditQuestionScenes", controller = "StoryEditing", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] EditQuestionScenes(System.Collections.Generic.List`1[Jam.ViewModels.QuestionSceneBaseViewModel]) on controller Jam.Controllers.StoryEditingController (Jam).
+2025-11-06 20:07:52.198 +01:00 [INF] Executing RedirectResult, redirecting to /StoryEditing/EditStory?storyId=1.
+2025-11-06 20:07:52.201 +01:00 [INF] Executed action Jam.Controllers.StoryEditingController.EditQuestionScenes (Jam) in 69.6937ms
+2025-11-06 20:07:52.201 +01:00 [INF] Executed endpoint 'Jam.Controllers.StoryEditingController.EditQuestionScenes (Jam)'
+2025-11-06 20:07:52.202 +01:00 [INF] Request finished HTTP/2 POST https://localhost:7025/StoryEditing/EditQuestionScenes - 302 0 null 184.3396ms
+2025-11-06 20:07:52.209 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7025/StoryEditing/EditStory?storyId=1 - null null
+2025-11-06 20:07:52.234 +01:00 [INF] Executing endpoint 'Jam.Controllers.StoryEditingController.EditStory (Jam)'
+2025-11-06 20:07:52.234 +01:00 [INF] Route matched with {action = "EditStory", controller = "StoryEditing", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] EditStory(Int32) on controller Jam.Controllers.StoryEditingController (Jam).
+2025-11-06 20:07:52.239 +01:00 [INF] Executing ViewResult, running view EditStory.
+2025-11-06 20:07:52.291 +01:00 [INF] Executed ViewResult - view EditStory executed in 3.8692ms.
+2025-11-06 20:07:52.314 +01:00 [INF] Executed action Jam.Controllers.StoryEditingController.EditStory (Jam) in 80.0874ms
+2025-11-06 20:07:52.387 +01:00 [INF] Executed endpoint 'Jam.Controllers.StoryEditingController.EditStory (Jam)'
+2025-11-06 20:07:52.387 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7025/StoryEditing/EditStory?storyId=1 - 200 null text/html; charset=utf-8 178.0701ms
+2025-11-06 20:07:54.507 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7025/StoryEditing/EditQuestionScenes?storyId=1 - null null
+2025-11-06 20:07:54.516 +01:00 [INF] Executing endpoint 'Jam.Controllers.StoryEditingController.EditQuestionScenes (Jam)'
+2025-11-06 20:07:54.517 +01:00 [INF] Route matched with {action = "EditQuestionScenes", controller = "StoryEditing", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] EditQuestionScenes(Int32) on controller Jam.Controllers.StoryEditingController (Jam).
+2025-11-06 20:07:54.531 +01:00 [INF] Executing ViewResult, running view EditQuestionScenes.
+2025-11-06 20:07:54.678 +01:00 [INF] Executed ViewResult - view EditQuestionScenes executed in 146.3872ms.
+2025-11-06 20:07:54.678 +01:00 [INF] Executed action Jam.Controllers.StoryEditingController.EditQuestionScenes (Jam) in 161.3221ms
+2025-11-06 20:07:54.678 +01:00 [INF] Executed endpoint 'Jam.Controllers.StoryEditingController.EditQuestionScenes (Jam)'
+2025-11-06 20:07:54.680 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7025/StoryEditing/EditQuestionScenes?storyId=1 - 200 null text/html; charset=utf-8 173.664ms
+2025-11-06 20:08:08.835 +01:00 [INF] Request starting HTTP/2 POST https://localhost:7025/StoryEditing/DeleteQuestion?storyId=1&questionSceneId=3 - application/x-www-form-urlencoded 225
+2025-11-06 20:08:08.843 +01:00 [INF] Executing endpoint 'Jam.Controllers.StoryEditingController.DeleteQuestion (Jam)'
+2025-11-06 20:08:08.843 +01:00 [INF] Route matched with {action = "DeleteQuestion", controller = "StoryEditing", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteQuestion(Int32, Int32) on controller Jam.Controllers.StoryEditingController (Jam).
+2025-11-06 20:08:08.877 +01:00 [ERR] An exception occurred in the database while saving changes for context type 'Jam.DAL.StoryDbContext'.
+System.InvalidOperationException: Unable to save changes because a circular dependency was detected in the data to be saved: 'QuestionScene [Modified] ForeignKeyConstraint { 'NextQuestionSceneId' } <-
+QuestionScene [Deleted] Index { 'NextQuestionSceneId' } <-
+QuestionScene [Modified]To show additional information call 'DbContextOptionsBuilder.EnableSensitiveDataLogging'.'.
+   at Microsoft.EntityFrameworkCore.Utilities.Multigraph`2.ThrowCycle(List`1 cycle, Func`2 formatCycle, Func`2 formatException)
+   at Microsoft.EntityFrameworkCore.Utilities.Multigraph`2.TopologicalSortCore(Boolean withBatching, Func`4 canBreakEdges, Func`2 formatCycle, Func`2 formatException)
+   at Microsoft.EntityFrameworkCore.Utilities.Multigraph`2.BatchingTopologicalSort(Func`4 canBreakEdges, Func`2 formatCycle, Func`2 formatException)
+   at Microsoft.EntityFrameworkCore.Update.Internal.CommandBatchPreparer.TopologicalSort(IEnumerable`1 commands)
+   at Microsoft.EntityFrameworkCore.Update.Internal.CommandBatchPreparer.BatchCommands(IList`1 entries, IUpdateAdapter updateAdapter)+MoveNext()
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+System.InvalidOperationException: Unable to save changes because a circular dependency was detected in the data to be saved: 'QuestionScene [Modified] ForeignKeyConstraint { 'NextQuestionSceneId' } <-
+QuestionScene [Deleted] Index { 'NextQuestionSceneId' } <-
+QuestionScene [Modified]To show additional information call 'DbContextOptionsBuilder.EnableSensitiveDataLogging'.'.
+   at Microsoft.EntityFrameworkCore.Utilities.Multigraph`2.ThrowCycle(List`1 cycle, Func`2 formatCycle, Func`2 formatException)
+   at Microsoft.EntityFrameworkCore.Utilities.Multigraph`2.TopologicalSortCore(Boolean withBatching, Func`4 canBreakEdges, Func`2 formatCycle, Func`2 formatException)
+   at Microsoft.EntityFrameworkCore.Utilities.Multigraph`2.BatchingTopologicalSort(Func`4 canBreakEdges, Func`2 formatCycle, Func`2 formatException)
+   at Microsoft.EntityFrameworkCore.Update.Internal.CommandBatchPreparer.TopologicalSort(IEnumerable`1 commands)
+   at Microsoft.EntityFrameworkCore.Update.Internal.CommandBatchPreparer.BatchCommands(IList`1 entries, IUpdateAdapter updateAdapter)+MoveNext()
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2025-11-06 20:08:08.901 +01:00 [ERR] [SceneRepository -> DeleteQuestionScene] Error deleting scene 3
+System.InvalidOperationException: Unable to save changes because a circular dependency was detected in the data to be saved: 'QuestionScene [Modified] ForeignKeyConstraint { 'NextQuestionSceneId' } <-
+QuestionScene [Deleted] Index { 'NextQuestionSceneId' } <-
+QuestionScene [Modified]To show additional information call 'DbContextOptionsBuilder.EnableSensitiveDataLogging'.'.
+   at Microsoft.EntityFrameworkCore.Utilities.Multigraph`2.ThrowCycle(List`1 cycle, Func`2 formatCycle, Func`2 formatException)
+   at Microsoft.EntityFrameworkCore.Utilities.Multigraph`2.TopologicalSortCore(Boolean withBatching, Func`4 canBreakEdges, Func`2 formatCycle, Func`2 formatException)
+   at Microsoft.EntityFrameworkCore.Utilities.Multigraph`2.BatchingTopologicalSort(Func`4 canBreakEdges, Func`2 formatCycle, Func`2 formatException)
+   at Microsoft.EntityFrameworkCore.Update.Internal.CommandBatchPreparer.TopologicalSort(IEnumerable`1 commands)
+   at Microsoft.EntityFrameworkCore.Update.Internal.CommandBatchPreparer.BatchCommands(IList`1 entries, IUpdateAdapter updateAdapter)+MoveNext()
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Jam.DAL.SceneDAL.SceneRepository.DeleteQuestionScene(Int32 questionSceneId, Nullable`1 previousSceneId) in /Users/jaraazad/Desktop/Jam/DAL/SceneDAL/SceneRepository.cs:line 452
+2025-11-06 20:08:08.902 +01:00 [INF] Executing RedirectResult, redirecting to /StoryEditing/EditQuestionScenes?storyId=1.
+2025-11-06 20:08:08.902 +01:00 [INF] Executed action Jam.Controllers.StoryEditingController.DeleteQuestion (Jam) in 59.1298ms
+2025-11-06 20:08:08.902 +01:00 [INF] Executed endpoint 'Jam.Controllers.StoryEditingController.DeleteQuestion (Jam)'
+2025-11-06 20:08:08.902 +01:00 [INF] Request finished HTTP/2 POST https://localhost:7025/StoryEditing/DeleteQuestion?storyId=1&questionSceneId=3 - 302 0 null 67.6045ms
+2025-11-06 20:08:08.931 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7025/StoryEditing/EditQuestionScenes?storyId=1 - null null
+2025-11-06 20:08:08.952 +01:00 [INF] Executing endpoint 'Jam.Controllers.StoryEditingController.EditQuestionScenes (Jam)'
+2025-11-06 20:08:08.953 +01:00 [INF] Route matched with {action = "EditQuestionScenes", controller = "StoryEditing", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] EditQuestionScenes(Int32) on controller Jam.Controllers.StoryEditingController (Jam).
+2025-11-06 20:08:08.959 +01:00 [INF] Executing ViewResult, running view EditQuestionScenes.
+2025-11-06 20:08:09.081 +01:00 [INF] Executed ViewResult - view EditQuestionScenes executed in 122.627ms.
+2025-11-06 20:08:09.083 +01:00 [INF] Executed action Jam.Controllers.StoryEditingController.EditQuestionScenes (Jam) in 128.6648ms
+2025-11-06 20:08:09.085 +01:00 [INF] Executed endpoint 'Jam.Controllers.StoryEditingController.EditQuestionScenes (Jam)'
+2025-11-06 20:08:09.091 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7025/StoryEditing/EditQuestionScenes?storyId=1 - 200 null text/html; charset=utf-8 160.5263ms
+2025-11-06 20:08:12.932 +01:00 [INF] Request starting HTTP/2 POST https://localhost:7025/StoryEditing/EditQuestionScenes - application/x-www-form-urlencoded 5417
+2025-11-06 20:08:12.937 +01:00 [INF] Executing endpoint 'Jam.Controllers.StoryEditingController.EditQuestionScenes (Jam)'
+2025-11-06 20:08:12.938 +01:00 [INF] Route matched with {action = "EditQuestionScenes", controller = "StoryEditing", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] EditQuestionScenes(System.Collections.Generic.List`1[Jam.ViewModels.QuestionSceneBaseViewModel]) on controller Jam.Controllers.StoryEditingController (Jam).
+2025-11-06 20:08:12.997 +01:00 [INF] Executing RedirectResult, redirecting to /StoryEditing/EditStory?storyId=1.
+2025-11-06 20:08:12.998 +01:00 [INF] Executed action Jam.Controllers.StoryEditingController.EditQuestionScenes (Jam) in 59.4785ms
+2025-11-06 20:08:12.998 +01:00 [INF] Executed endpoint 'Jam.Controllers.StoryEditingController.EditQuestionScenes (Jam)'
+2025-11-06 20:08:12.998 +01:00 [INF] Request finished HTTP/2 POST https://localhost:7025/StoryEditing/EditQuestionScenes - 302 0 null 66.08ms
+2025-11-06 20:08:13.001 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7025/StoryEditing/EditStory?storyId=1 - null null
+2025-11-06 20:08:13.002 +01:00 [INF] Executing endpoint 'Jam.Controllers.StoryEditingController.EditStory (Jam)'
+2025-11-06 20:08:13.002 +01:00 [INF] Route matched with {action = "EditStory", controller = "StoryEditing", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] EditStory(Int32) on controller Jam.Controllers.StoryEditingController (Jam).
+2025-11-06 20:08:13.005 +01:00 [INF] Executing ViewResult, running view EditStory.
+2025-11-06 20:08:13.010 +01:00 [INF] Executed ViewResult - view EditStory executed in 5.3681ms.
+2025-11-06 20:08:13.013 +01:00 [INF] Executed action Jam.Controllers.StoryEditingController.EditStory (Jam) in 11.1162ms
+2025-11-06 20:08:13.014 +01:00 [INF] Executed endpoint 'Jam.Controllers.StoryEditingController.EditStory (Jam)'
+2025-11-06 20:08:13.015 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7025/StoryEditing/EditStory?storyId=1 - 200 null text/html; charset=utf-8 13.4188ms

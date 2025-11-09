@@ -1,0 +1,28 @@
+@model (int QuestionSceneId, int StoryId, string QuestionLabel)
+
+<div class="modal fade" id="deleteQuestionModal" tabindex="-1" aria-labelledby="deleteQuestionModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content border-danger">
+            <div class="modal-header bg-danger text-white">
+                <h5 class="modal-title" id="deleteQuestionModalLabel">Delete Question</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body">
+                <p>Are you sure you want to delete <strong id="deleteItemName">@Model.QuestionLabel</strong>?</p>
+                <p class="text-muted small mb-0">This question and its answers will be permanently removed.</p>
+            </div>
+
+            <div class="modal-footer">
+                <form id="deleteForm" method="post" asp-controller="StoryEditing" asp-action="DeleteQuestion">
+                    @Html.AntiForgeryToken()
+                    <input type="hidden" id="deleteItemId" name="questionSceneId" value="@Model.QuestionSceneId" />
+                    <input type="hidden" id="deleteStoryId" name="storyId" value="@Model.StoryId" />
+
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="submit" class="btn btn-danger">Yes, delete question</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

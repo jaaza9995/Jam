@@ -1,0 +1,84 @@
+@model Jam.ViewModels.StoryCreation.CreateMultipleQuestionScenesViewModel
+
+@{
+    ViewData["Title"] = "Create Question Scenes";
+}
+
+<h2>Create Questions For Your Game</h2>
+
+<form asp-action="CreateQuestionScenes" method="post">
+    <!-- ✅ Alle spørsmål ligger her -->
+    <div id="questionScenesContainer">
+        @for (int i = 0; i < Model.QuestionScenes.Count; i++)
+        {
+            var vd = new Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary(ViewData)
+            {
+                TemplateInfo = { HtmlFieldPrefix = $"QuestionScenes[{i}]" }
+            };
+            vd["QuestionNumber"] = i + 1;
+
+            <div class="mb-4">
+                @await Html.PartialAsync("_QuestionScenePartial", Model.QuestionScenes[i], vd)
+            </div>
+        }
+    </div>
+
+    <!-- ✅ Knappene ligger ETTER containeren -->
+    <div class="mt-4 d-flex gap-2">
+        <button type="submit" name="action" value="back" formnovalidate class="btn btn-secondary">
+            ← Back
+        </button>
+
+        <button type="button" id="addSceneBtn" class="btn btn-secondary">
+            + Add New Question Scene
+        </button>
+
+        <button type="submit" name="action" value="next" class="btn btn-primary ms-2">
+            Next → Endings
+        </button>
+    </div>
+</form>
+
+
+@section Scripts {
+    <script>
+        // --- Dynamically add a new question scene partial via AJAX ---
+        document.getElementById('addSceneBtn').addEventListener('click', function () {
+           const container = document.getElementById('questionScenesContainer');
+
+            // Determine index for the new question scene
+            // (equal to the current count of question-card elements)
+            const index = container.querySelectorAll('.question-card').length;
+
+            // Request a new partial with the correct index
+            fetch('@Url.Action("GetQuestionScenePartial", "StoryCreation")?index=' + index + '&questionNumber=' + (index + 1))
+                .then(r => r.text())
+                .then(html => {
+                    container.insertAdjacentHTML('beforeend', html);
+                    setTimeout(() => {
+                    $.validator.unobtrusive.parse(container);
+                    }, 50);
+                });
+        });
+
+        /*
+        // --- Auto-saving userdata to session if user clicks "Back" ---
+        document.getElementById('backButton').addEventListener('click', function () {
+            const form = document.querySelector('form');
+            const formData = new FormData(form);
+            const data = {};
+
+            // Convert form data into a structured object
+            formData.forEach((value, key) => {
+                data[key] = value;
+            });
+
+            fetch('/StoryCreation/SavePartialStep', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ QuestionScenes: [data] })
+            });
+        });
+        */
+  </script>
+}

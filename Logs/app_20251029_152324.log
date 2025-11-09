@@ -1,0 +1,18 @@
+2025-10-29 15:23:24.648 +01:00 [INF] Applying migration '20251024065541_InitialCreate'.
+2025-10-29 15:23:25.106 +01:00 [INF] User profile is available. Using '/Users/michaelnedgaardisaksen/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-10-29 15:23:25.373 +01:00 [INF] Now listening on: https://localhost:7025
+2025-10-29 15:23:25.374 +01:00 [INF] Now listening on: http://localhost:5262
+2025-10-29 15:23:25.377 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-29 15:23:25.378 +01:00 [INF] Hosting environment: Development
+2025-10-29 15:23:25.379 +01:00 [INF] Content root path: /Users/michaelnedgaardisaksen/Documents/ITPE3100_Webapplikasjoner/Demo-Jam/Jam
+2025-10-29 15:23:25.865 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7025/ - null null
+2025-10-29 15:23:25.877 +01:00 [INF] Executing endpoint 'Jam.Controllers.HomeController.Index (Jam)'
+2025-10-29 15:23:25.885 +01:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller Jam.Controllers.HomeController (Jam).
+2025-10-29 15:23:26.009 +01:00 [INF] Executing ViewResult, running view Index.
+2025-10-29 15:23:26.051 +01:00 [INF] Executed ViewResult - view Index executed in 42.8167ms.
+2025-10-29 15:23:26.053 +01:00 [INF] Executed action Jam.Controllers.HomeController.Index (Jam) in 167.8351ms
+2025-10-29 15:23:26.053 +01:00 [INF] Executed endpoint 'Jam.Controllers.HomeController.Index (Jam)'
+2025-10-29 15:23:26.057 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7025/ - 200 null text/html; charset=utf-8 192.4822ms
+2025-10-29 15:23:28.988 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7025/StoryPlaying - null null
+2025-10-29 15:23:28.995 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7025/StoryPlaying - 404 0 null 7.6328ms
+2025-10-29 15:23:28.996 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7025/StoryPlaying, Response status code: 404

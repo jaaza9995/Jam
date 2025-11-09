@@ -1,0 +1,93 @@
+@model Jam.ViewModels.QuestionSceneBaseViewModel
+
+@{
+    var questionNumber = ViewData["QuestionNumber"] as int? ?? 0;
+}
+
+<div class="question-card card p-4 mb-4 bg-light border rounded-3 shadow-sm">
+    <h4 class="mb-3">Question @questionNumber</h4>
+
+    <div class="mb-3">
+        <label asp-for="StoryText" class="form-label fw-bold"></label>
+        <textarea asp-for="StoryText" class="form-control" rows="3"></textarea>
+        <span asp-validation-for="StoryText" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="QuestionText" class="form-label fw-bold"></label>
+        <input asp-for="QuestionText" class="form-control" />
+        <span asp-validation-for="QuestionText" class="text-danger"></span>
+    </div>
+
+    <h5 class="mt-4">Answer Options</h5>
+    @for (int i = 0; i < Model.Answers.Count; i++)
+    {
+        <div class="card mb-2 p-2 bg-white border rounded-2">
+            <div class="d-flex align-items-center mb-2">
+                <label class="me-2">Answer @(i + 1):</label>
+                <input asp-for="Answers[i].AnswerText" class="form-control me-2" />
+                <span asp-validation-for="Answers[i].AnswerText" class="text-danger"></span>
+
+                <input type="radio"
+                       name="@ViewData.TemplateInfo.GetFullHtmlFieldName(nameof(Model.CorrectAnswerIndex))"
+                       value="@i"
+                       class="form-check-input"
+                       @(Model.CorrectAnswerIndex == i ? "checked" : "") />
+                <label class="form-check-label">Correct</label>
+            </div>
+            <div>
+                <label asp-for="Answers[i].ContextText" class="form-label">Follow-up text:</label>
+                <input asp-for="Answers[i].ContextText" class="form-control" />
+                <span asp-validation-for="Answers[i].ContextText" class="text-danger"></span>
+            </div>
+           
+        </div>        
+    }
+<button type="submit"
+        name="action"
+        value="deleteInline:@ViewData.TemplateInfo.HtmlFieldPrefix"
+        class="btn btn-outline-danger btn-sm w-100">
+    Delete
+</button>
+
+
+    
+    </div> <!-- slutt på answer loop -->
+
+    <span asp-validation-for="CorrectAnswerIndex" class="text-danger"></span>
+</div>
+@section Scripts {
+    <script>
+        document.getElementById('addSceneBtn').addEventListener('click', function () {
+            const container = document.getElementById('questionScenesContainer');
+            const index = container.querySelectorAll('.question-card').length;
+
+            fetch('@Url.Action("GetEditQuestionScenePartial", "StoryEditing")?index=' + index + '&questionNumber=' + (index + 1))
+                .then(r => r.text())
+                .then(html => {
+                    container.insertAdjacentHTML('beforeend', html);
+                    $.validator.unobtrusive.parse(container);
+
+                    const lastCard = container.lastElementChild;
+                    const deleteButton = lastCard.querySelector('button[name="action"]');
+                    if (deleteButton) {
+                        deleteButton.value = 'deleteInline:' + index;
+                });
+        });
+        document.addEventListener('click', function (e) {
+            if (e.target.closest('.delete-question-btn')) {
+                const btn = e.target.closest('.delete-question-btn');
+                const card = btn.closest('.card');
+                card.remove();
+
+                // Re-indekser overskrifter
+                const container = document.getElementById('questionScenesContainer');
+                const cards = container.querySelectorAll('.card.p-4');
+                cards.forEach((c, idx) => {
+                    const title = c.querySelector('h4');
+                    if (title) title.textContent = `Question ${idx + 1}`;
+                });
+            }
+        });
+    </script>
+}

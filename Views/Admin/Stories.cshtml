@@ -1,0 +1,57 @@
+@using Jam.Models
+@model IEnumerable<Story>
+
+@{
+    ViewData["Title"] = "All Stories";
+}
+
+<h2 class="mb-4">Stories</h2>
+
+@if (!Model.Any())
+{
+    <div class="alert alert-info">No stories found.</div>
+}
+else
+{
+    <table class="table table-striped table-hover align-middle">
+        <thead class="table-dark">
+            <tr>
+                <th>Story ID</th>
+                <th>Title</th>
+                <th>Difficulty</th>
+                <th>Accessibility</th>
+                <th>Owner Username</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var story in Model)
+            {
+                <tr>
+                    <td>@story.StoryId</td>
+                    <td>@story.Title</td>
+                    <td>@story.DifficultyLevel</td>
+                    <td>@story.Accessible</td>
+                    <td>@story.User?.UserName</td>
+                    <td>
+                        <a asp-controller="StoryManagement" asp-action="StoryDetails" asp-route-storyId="@story.StoryId"
+                           class="btn btn-sm btn-outline-primary">View</a>
+
+                        <a asp-controller="StoryEditing" asp-action="EditStory" asp-route-storyId="@story.StoryId"
+                           class="btn btn-sm btn-outline-warning">Edit</a>
+
+                        <button type="button" class="btn btn-sm btn-outline-danger"
+                                data-bs-toggle="modal"
+                                data-bs-target="#deleteModal"
+                                data-item-id="@story.StoryId"
+                                data-item-name="@story.Title">
+                            Delete
+                        </button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@await Html.PartialAsync("_DeleteConfirmationModal", ("StoryManagement", "DeleteStory", "story", "storyId"))

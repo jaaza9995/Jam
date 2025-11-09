@@ -1,0 +1,18 @@
+@using Jam.ViewModels.StoryPlaying
+@model AnswerFeedbackViewModel
+
+<div class="container text-center mt-5">
+
+    <h3>Your current level: @Model.NewLevel</h3>
+    <h3>@Model.SceneText</h3>
+
+    <form asp-action="AnswerFeedback" method="post">
+        <input type="hidden" asp-for="SessionId" />
+        <input type="hidden" asp-for="StoryId" />
+        <input type="hidden" asp-for="NextSceneId" />
+        <input type="hidden" asp-for="NextSceneType" />
+        <input type="hidden" asp-for="NewScore" />
+        <input type="hidden" asp-for="NewLevel" />
+        <button type="submit" class="btn btn-primary">Continue</button>
+    </form>
+</div>

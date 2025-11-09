@@ -1,0 +1,75 @@
+2025-10-28 11:11:51.868 +01:00 [INF] Applying migration '20251024065541_InitialCreate'.
+2025-10-28 11:11:52.256 +01:00 [INF] User profile is available. Using '/Users/michaelnedgaardisaksen/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-10-28 11:11:52.680 +01:00 [INF] Now listening on: https://localhost:7025
+2025-10-28 11:11:52.680 +01:00 [INF] Now listening on: http://localhost:5262
+2025-10-28 11:11:52.684 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-28 11:11:52.685 +01:00 [INF] Hosting environment: Development
+2025-10-28 11:11:52.685 +01:00 [INF] Content root path: /Users/michaelnedgaardisaksen/Documents/ITPE3100_Webapplikasjoner/Demo-Jam/Jam
+2025-10-28 11:11:52.986 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7025/ - null null
+2025-10-28 11:11:52.997 +01:00 [INF] Executing endpoint 'Jam.Controllers.HomeController.Index (Jam)'
+2025-10-28 11:11:53.005 +01:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller Jam.Controllers.HomeController (Jam).
+2025-10-28 11:11:53.093 +01:00 [INF] Executing ViewResult, running view Index.
+2025-10-28 11:11:53.136 +01:00 [INF] Executed ViewResult - view Index executed in 43.2311ms.
+2025-10-28 11:11:53.137 +01:00 [INF] Executed action Jam.Controllers.HomeController.Index (Jam) in 131.7705ms
+2025-10-28 11:11:53.137 +01:00 [INF] Executed endpoint 'Jam.Controllers.HomeController.Index (Jam)'
+2025-10-28 11:11:53.141 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7025/ - 200 null text/html; charset=utf-8 155.6753ms
+2025-10-28 11:12:29.188 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7025/StoryPlaying/StartStory?storyId=1 - null null
+2025-10-28 11:12:29.194 +01:00 [INF] Executing endpoint 'Jam.Controllers.StoryPlayingController.StartStory (Jam)'
+2025-10-28 11:12:29.207 +01:00 [INF] Route matched with {action = "StartStory", controller = "StoryPlaying"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] StartStory(Int32) on controller Jam.Controllers.StoryPlayingController (Jam).
+2025-10-28 11:12:29.287 +01:00 [INF] Executing RedirectResult, redirecting to /StoryPlaying/PlayScene?sceneId=3&SceneType=Intro&sessionId=3.
+2025-10-28 11:12:29.287 +01:00 [INF] Executed action Jam.Controllers.StoryPlayingController.StartStory (Jam) in 80.0978ms
+2025-10-28 11:12:29.287 +01:00 [INF] Executed endpoint 'Jam.Controllers.StoryPlayingController.StartStory (Jam)'
+2025-10-28 11:12:29.287 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7025/StoryPlaying/StartStory?storyId=1 - 302 0 null 99.3092ms
+2025-10-28 11:12:29.292 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7025/StoryPlaying/PlayScene?sceneId=3&SceneType=Intro&sessionId=3 - null null
+2025-10-28 11:12:29.293 +01:00 [INF] Executing endpoint 'Jam.Controllers.StoryPlayingController.PlayScene (Jam)'
+2025-10-28 11:12:29.295 +01:00 [INF] Route matched with {action = "PlayScene", controller = "StoryPlaying"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] PlayScene(Int32, Jam.Models.Enums.SceneType, Int32) on controller Jam.Controllers.StoryPlayingController (Jam).
+2025-10-28 11:12:29.306 +01:00 [INF] Executing ViewResult, running view PlayScene.
+2025-10-28 11:12:29.315 +01:00 [INF] Executed ViewResult - view PlayScene executed in 8.8694ms.
+2025-10-28 11:12:29.315 +01:00 [INF] Executed action Jam.Controllers.StoryPlayingController.PlayScene (Jam) in 19.787ms
+2025-10-28 11:12:29.315 +01:00 [INF] Executed endpoint 'Jam.Controllers.StoryPlayingController.PlayScene (Jam)'
+2025-10-28 11:12:29.315 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7025/StoryPlaying/PlayScene?sceneId=3&SceneType=Intro&sessionId=3 - 200 null text/html; charset=utf-8 23.195ms
+2025-10-28 11:15:21.299 +01:00 [INF] Request starting HTTP/2 POST https://localhost:7025/StoryPlaying/PlayScene - application/x-www-form-urlencoded 204
+2025-10-28 11:15:21.305 +01:00 [INF] Executing endpoint 'Jam.Controllers.StoryPlayingController.PlayScene (Jam)'
+2025-10-28 11:15:21.331 +01:00 [INF] Route matched with {action = "PlayScene", controller = "StoryPlaying"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] PlayScene(Jam.ViewModels.StoryPlaying.PlaySceneViewModel) on controller Jam.Controllers.StoryPlayingController (Jam).
+2025-10-28 11:15:21.375 +01:00 [INF] Executing RedirectResult, redirecting to /StoryPlaying/PlayScene?sceneId=4&sceneType=Question&sessionId=3.
+2025-10-28 11:15:21.375 +01:00 [INF] Executed action Jam.Controllers.StoryPlayingController.PlayScene (Jam) in 44.629ms
+2025-10-28 11:15:21.375 +01:00 [INF] Executed endpoint 'Jam.Controllers.StoryPlayingController.PlayScene (Jam)'
+2025-10-28 11:15:21.375 +01:00 [INF] Request finished HTTP/2 POST https://localhost:7025/StoryPlaying/PlayScene - 302 0 null 127.3658ms
+2025-10-28 11:15:21.380 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7025/StoryPlaying/PlayScene?sceneId=4&sceneType=Question&sessionId=3 - null null
+2025-10-28 11:15:21.405 +01:00 [INF] Executing endpoint 'Jam.Controllers.StoryPlayingController.PlayScene (Jam)'
+2025-10-28 11:15:21.405 +01:00 [INF] Route matched with {action = "PlayScene", controller = "StoryPlaying"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] PlayScene(Int32, Jam.Models.Enums.SceneType, Int32) on controller Jam.Controllers.StoryPlayingController (Jam).
+2025-10-28 11:15:21.426 +01:00 [INF] Executing ViewResult, running view PlayScene.
+2025-10-28 11:15:21.430 +01:00 [INF] Executed ViewResult - view PlayScene executed in 3.6613ms.
+2025-10-28 11:15:21.430 +01:00 [INF] Executed action Jam.Controllers.StoryPlayingController.PlayScene (Jam) in 24.9118ms
+2025-10-28 11:15:21.430 +01:00 [INF] Executed endpoint 'Jam.Controllers.StoryPlayingController.PlayScene (Jam)'
+2025-10-28 11:15:21.430 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7025/StoryPlaying/PlayScene?sceneId=4&sceneType=Question&sessionId=3 - 200 null text/html; charset=utf-8 50.364ms
+2025-10-28 11:16:06.932 +01:00 [INF] Request starting HTTP/2 POST https://localhost:7025/StoryPlaying/PlayScene - application/x-www-form-urlencoded 243
+2025-10-28 11:16:06.935 +01:00 [INF] Executing endpoint 'Jam.Controllers.StoryPlayingController.PlayScene (Jam)'
+2025-10-28 11:16:06.936 +01:00 [INF] Route matched with {action = "PlayScene", controller = "StoryPlaying"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] PlayScene(Jam.ViewModels.StoryPlaying.PlaySceneViewModel) on controller Jam.Controllers.StoryPlayingController (Jam).
+2025-10-28 11:16:06.962 +01:00 [INF] Executing RedirectResult, redirecting to /StoryPlaying/AnswerFeedback.
+2025-10-28 11:16:06.967 +01:00 [INF] Executed action Jam.Controllers.StoryPlayingController.PlayScene (Jam) in 31.0457ms
+2025-10-28 11:16:06.967 +01:00 [INF] Executed endpoint 'Jam.Controllers.StoryPlayingController.PlayScene (Jam)'
+2025-10-28 11:16:06.967 +01:00 [INF] Request finished HTTP/2 POST https://localhost:7025/StoryPlaying/PlayScene - 302 0 null 59.7154ms
+2025-10-28 11:16:06.972 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7025/StoryPlaying/AnswerFeedback - null null
+2025-10-28 11:16:06.973 +01:00 [INF] Executing endpoint 'Jam.Controllers.StoryPlayingController.AnswerFeedback (Jam)'
+2025-10-28 11:16:06.974 +01:00 [INF] Route matched with {action = "AnswerFeedback", controller = "StoryPlaying"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AnswerFeedback() on controller Jam.Controllers.StoryPlayingController (Jam).
+2025-10-28 11:16:06.976 +01:00 [INF] Executing ViewResult, running view AnswerFeedback.
+2025-10-28 11:16:06.991 +01:00 [INF] Executed ViewResult - view AnswerFeedback executed in 15.4396ms.
+2025-10-28 11:16:06.991 +01:00 [INF] Executed action Jam.Controllers.StoryPlayingController.AnswerFeedback (Jam) in 17.3721ms
+2025-10-28 11:16:06.991 +01:00 [INF] Executed endpoint 'Jam.Controllers.StoryPlayingController.AnswerFeedback (Jam)'
+2025-10-28 11:16:06.991 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7025/StoryPlaying/AnswerFeedback - 200 null text/html; charset=utf-8 18.5791ms
+2025-10-28 11:16:11.410 +01:00 [INF] Request starting HTTP/2 POST https://localhost:7025/StoryPlaying/AnswerFeedback - application/x-www-form-urlencoded 264
+2025-10-28 11:16:11.436 +01:00 [INF] Executing endpoint 'Jam.Controllers.StoryPlayingController.AnswerFeedback (Jam)'
+2025-10-28 11:16:11.445 +01:00 [INF] Route matched with {action = "AnswerFeedback", controller = "StoryPlaying"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AnswerFeedback(Jam.ViewModels.StoryPlaying.AnswerFeedbackViewModel) on controller Jam.Controllers.StoryPlayingController (Jam).
+2025-10-28 11:16:11.528 +01:00 [INF] Executing RedirectResult, redirecting to /StoryPlaying/PlayScene?sceneId=3&sceneType=Question&sessionId=3.
+2025-10-28 11:16:11.529 +01:00 [INF] Executed action Jam.Controllers.StoryPlayingController.AnswerFeedback (Jam) in 83.4677ms
+2025-10-28 11:16:11.529 +01:00 [INF] Executed endpoint 'Jam.Controllers.StoryPlayingController.AnswerFeedback (Jam)'
+2025-10-28 11:16:11.529 +01:00 [INF] Request finished HTTP/2 POST https://localhost:7025/StoryPlaying/AnswerFeedback - 302 0 null 144.2127ms
+2025-10-28 11:16:11.566 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7025/StoryPlaying/PlayScene?sceneId=3&sceneType=Question&sessionId=3 - null null
+2025-10-28 11:16:11.567 +01:00 [INF] Executing endpoint 'Jam.Controllers.StoryPlayingController.PlayScene (Jam)'
+2025-10-28 11:16:11.567 +01:00 [INF] Route matched with {action = "PlayScene", controller = "StoryPlaying"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] PlayScene(Int32, Jam.Models.Enums.SceneType, Int32) on controller Jam.Controllers.StoryPlayingController (Jam).
+2025-10-28 11:16:11.569 +01:00 [INF] Executing ViewResult, running view PlayScene.
+2025-10-28 11:16:11.570 +01:00 [INF] Executed ViewResult - view PlayScene executed in 0.9924ms.
+2025-10-28 11:16:11.570 +01:00 [INF] Executed action Jam.Controllers.StoryPlayingController.PlayScene (Jam) in 3.6456ms
+2025-10-28 11:16:11.570 +01:00 [INF] Executed endpoint 'Jam.Controllers.StoryPlayingController.PlayScene (Jam)'
+2025-10-28 11:16:11.570 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7025/StoryPlaying/PlayScene?sceneId=3&sceneType=Question&sessionId=3 - 200 null text/html; charset=utf-8 4.0607ms

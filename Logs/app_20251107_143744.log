@@ -1,0 +1,196 @@
+2025-11-07 14:37:44.801 +01:00 [INF] User profile is available. Using '/Users/jaraazad/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-11-07 14:37:45.289 +01:00 [INF] Applying migration '20251024065541_InitialCreate'.
+2025-11-07 14:37:45.325 +01:00 [INF] Applying migration '20251101105657_AddIdentitySupport'.
+2025-11-07 14:37:45.360 +01:00 [INF] Applying migration '20251103080324_UpdateNextQuestionSceneDeleteBehavior'.
+2025-11-07 14:37:46.274 +01:00 [INF] Now listening on: https://localhost:7025
+2025-11-07 14:37:46.275 +01:00 [INF] Now listening on: http://localhost:5262
+2025-11-07 14:37:46.280 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-07 14:37:46.280 +01:00 [INF] Hosting environment: Development
+2025-11-07 14:37:46.281 +01:00 [INF] Content root path: /Users/jaraazad/Desktop/Jam
+2025-11-07 14:37:46.625 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7025/ - null null
+2025-11-07 14:37:46.660 +01:00 [INF] Executing endpoint 'Jam.Controllers.HomeController.Index (Jam)'
+2025-11-07 14:37:46.669 +01:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller Jam.Controllers.HomeController (Jam).
+2025-11-07 14:37:46.686 +01:00 [WRN] [HomeController -> Index] Auth cookie invalid or user no longer exists. Redirecting to login.
+2025-11-07 14:37:46.691 +01:00 [INF] AuthenticationScheme: Identity.Application signed out.
+2025-11-07 14:37:46.693 +01:00 [INF] AuthenticationScheme: Identity.External signed out.
+2025-11-07 14:37:46.693 +01:00 [INF] AuthenticationScheme: Identity.TwoFactorUserId signed out.
+2025-11-07 14:37:46.696 +01:00 [INF] Executing LocalRedirectResult, redirecting to /Identity/Account/Login.
+2025-11-07 14:37:46.699 +01:00 [INF] Executed action Jam.Controllers.HomeController.Index (Jam) in 27.3101ms
+2025-11-07 14:37:46.700 +01:00 [INF] Executed endpoint 'Jam.Controllers.HomeController.Index (Jam)'
+2025-11-07 14:37:46.706 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7025/ - 302 0 null 82.03ms
+2025-11-07 14:37:46.711 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7025/Identity/Account/Login - null null
+2025-11-07 14:37:46.715 +01:00 [INF] Executing endpoint '/Account/Login'
+2025-11-07 14:37:46.730 +01:00 [INF] Route matched with {page = "/Account/Login", area = "Identity", action = "", controller = ""}. Executing page /Account/Login
+2025-11-07 14:37:46.737 +01:00 [INF] Executing handler method Jam.Areas.Identity.Pages.Account.LoginModel.OnGetAsync - ModelState is "Valid"
+2025-11-07 14:37:46.738 +01:00 [INF] AuthenticationScheme: Identity.External signed out.
+2025-11-07 14:37:46.739 +01:00 [INF] Executed handler method OnGetAsync, returned result .
+2025-11-07 14:37:46.740 +01:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2025-11-07 14:37:46.740 +01:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2025-11-07 14:37:46.798 +01:00 [INF] Executed page /Account/Login in 67.4732ms
+2025-11-07 14:37:46.798 +01:00 [INF] Executed endpoint '/Account/Login'
+2025-11-07 14:37:46.803 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7025/Identity/Account/Login - 200 null text/html; charset=utf-8 91.273ms
+2025-11-07 14:37:46.835 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7025/lib/jquery-validation/dist/jquery.validate.min.js - null null
+2025-11-07 14:37:46.837 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7025/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js - null null
+2025-11-07 14:37:46.841 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7025/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js - 404 0 null 3.2772ms
+2025-11-07 14:37:46.841 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7025/lib/jquery-validation/dist/jquery.validate.min.js - 404 0 null 6.2651ms
+2025-11-07 14:37:46.841 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7025/lib/jquery-validation/dist/jquery.validate.min.js, Response status code: 404
+2025-11-07 14:37:46.841 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7025/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js, Response status code: 404
+2025-11-07 14:37:47.948 +01:00 [INF] Request starting HTTP/2 POST https://localhost:7025/Identity/Account/Login - application/x-www-form-urlencoded 236
+2025-11-07 14:37:47.979 +01:00 [INF] Executing endpoint '/Account/Login'
+2025-11-07 14:37:47.979 +01:00 [INF] Route matched with {page = "/Account/Login", area = "Identity", action = "", controller = ""}. Executing page /Account/Login
+2025-11-07 14:37:48.000 +01:00 [INF] Executing handler method Jam.Areas.Identity.Pages.Account.LoginModel.OnPostAsync - ModelState is "Valid"
+2025-11-07 14:37:48.122 +01:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2025-11-07 14:37:48.123 +01:00 [INF] User logged in.
+2025-11-07 14:37:48.123 +01:00 [INF] Executed handler method OnPostAsync, returned result Microsoft.AspNetCore.Mvc.LocalRedirectResult.
+2025-11-07 14:37:48.123 +01:00 [INF] Executing LocalRedirectResult, redirecting to /.
+2025-11-07 14:37:48.123 +01:00 [INF] Executed page /Account/Login in 143.9309ms
+2025-11-07 14:37:48.124 +01:00 [INF] Executed endpoint '/Account/Login'
+2025-11-07 14:37:48.124 +01:00 [INF] Request finished HTTP/2 POST https://localhost:7025/Identity/Account/Login - 302 0 null 176.092ms
+2025-11-07 14:37:48.177 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7025/ - null null
+2025-11-07 14:37:48.178 +01:00 [INF] Executing endpoint 'Jam.Controllers.HomeController.Index (Jam)'
+2025-11-07 14:37:48.179 +01:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller Jam.Controllers.HomeController (Jam).
+2025-11-07 14:37:48.317 +01:00 [INF] Executing ViewResult, running view Index.
+2025-11-07 14:37:48.358 +01:00 [INF] Executed ViewResult - view Index executed in 42.3098ms.
+2025-11-07 14:37:48.361 +01:00 [INF] Executed action Jam.Controllers.HomeController.Index (Jam) in 181.8845ms
+2025-11-07 14:37:48.361 +01:00 [INF] Executed endpoint 'Jam.Controllers.HomeController.Index (Jam)'
+2025-11-07 14:37:48.362 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7025/ - 200 null text/html; charset=utf-8 210.8432ms
+2025-11-07 14:37:49.291 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7025/StoryEditing/EditStory?storyId=1 - null null
+2025-11-07 14:37:49.298 +01:00 [INF] Executing endpoint 'Jam.Controllers.StoryEditingController.EditStory (Jam)'
+2025-11-07 14:37:49.308 +01:00 [INF] Route matched with {action = "EditStory", controller = "StoryEditing", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] EditStory(Int32) on controller Jam.Controllers.StoryEditingController (Jam).
+2025-11-07 14:37:49.332 +01:00 [INF] Executing ViewResult, running view EditStory.
+2025-11-07 14:37:49.440 +01:00 [INF] Executed ViewResult - view EditStory executed in 109.1498ms.
+2025-11-07 14:37:49.440 +01:00 [INF] Executed action Jam.Controllers.StoryEditingController.EditStory (Jam) in 132.1237ms
+2025-11-07 14:37:49.440 +01:00 [INF] Executed endpoint 'Jam.Controllers.StoryEditingController.EditStory (Jam)'
+2025-11-07 14:37:49.441 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7025/StoryEditing/EditStory?storyId=1 - 200 null text/html; charset=utf-8 150.0055ms
+2025-11-07 14:37:50.669 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7025/StoryEditing/EditQuestionScenes?storyId=1 - null null
+2025-11-07 14:37:50.674 +01:00 [INF] Executing endpoint 'Jam.Controllers.StoryEditingController.EditQuestionScenes (Jam)'
+2025-11-07 14:37:50.682 +01:00 [INF] Route matched with {action = "EditQuestionScenes", controller = "StoryEditing", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] EditQuestionScenes(Int32) on controller Jam.Controllers.StoryEditingController (Jam).
+2025-11-07 14:37:50.751 +01:00 [INF] Executing ViewResult, running view EditQuestionScenes.
+2025-11-07 14:37:50.775 +01:00 [INF] Executed ViewResult - view EditQuestionScenes executed in 24.5424ms.
+2025-11-07 14:37:50.775 +01:00 [INF] Executed action Jam.Controllers.StoryEditingController.EditQuestionScenes (Jam) in 93.1159ms
+2025-11-07 14:37:50.775 +01:00 [INF] Executed endpoint 'Jam.Controllers.StoryEditingController.EditQuestionScenes (Jam)'
+2025-11-07 14:37:50.775 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7025/StoryEditing/EditQuestionScenes?storyId=1 - 200 null text/html; charset=utf-8 105.9842ms
+2025-11-07 14:37:52.150 +01:00 [INF] Request starting HTTP/2 POST https://localhost:7025/StoryEditing/EditQuestionScenes?storyId=1 - application/x-www-form-urlencoded 6488
+2025-11-07 14:37:52.151 +01:00 [INF] Executing endpoint 'Jam.Controllers.StoryEditingController.EditQuestionScenes (Jam)'
+2025-11-07 14:37:52.159 +01:00 [INF] Route matched with {action = "EditQuestionScenes", controller = "StoryEditing", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] EditQuestionScenes(System.Collections.Generic.List`1[Jam.ViewModels.QuestionSceneBaseViewModel]) on controller Jam.Controllers.StoryEditingController (Jam).
+2025-11-07 14:37:52.259 +01:00 [INF] Executing RedirectResult, redirecting to /StoryEditing/EditStory?storyId=1.
+2025-11-07 14:37:52.259 +01:00 [INF] Executed action Jam.Controllers.StoryEditingController.EditQuestionScenes (Jam) in 100.0773ms
+2025-11-07 14:37:52.259 +01:00 [INF] Executed endpoint 'Jam.Controllers.StoryEditingController.EditQuestionScenes (Jam)'
+2025-11-07 14:37:52.259 +01:00 [INF] Request finished HTTP/2 POST https://localhost:7025/StoryEditing/EditQuestionScenes?storyId=1 - 302 0 null 108.9075ms
+2025-11-07 14:37:52.287 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7025/StoryEditing/EditStory?storyId=1 - null null
+2025-11-07 14:37:52.288 +01:00 [INF] Executing endpoint 'Jam.Controllers.StoryEditingController.EditStory (Jam)'
+2025-11-07 14:37:52.288 +01:00 [INF] Route matched with {action = "EditStory", controller = "StoryEditing", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] EditStory(Int32) on controller Jam.Controllers.StoryEditingController (Jam).
+2025-11-07 14:37:52.290 +01:00 [INF] Executing ViewResult, running view EditStory.
+2025-11-07 14:37:52.293 +01:00 [INF] Executed ViewResult - view EditStory executed in 2.6935ms.
+2025-11-07 14:37:52.321 +01:00 [INF] Executed action Jam.Controllers.StoryEditingController.EditStory (Jam) in 32.9537ms
+2025-11-07 14:37:52.321 +01:00 [INF] Executed endpoint 'Jam.Controllers.StoryEditingController.EditStory (Jam)'
+2025-11-07 14:37:52.323 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7025/StoryEditing/EditStory?storyId=1 - 200 null text/html; charset=utf-8 35.803ms
+2025-11-07 14:37:52.990 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7025/StoryEditing/EditQuestionScenes?storyId=1 - null null
+2025-11-07 14:37:53.017 +01:00 [INF] Executing endpoint 'Jam.Controllers.StoryEditingController.EditQuestionScenes (Jam)'
+2025-11-07 14:37:53.017 +01:00 [INF] Route matched with {action = "EditQuestionScenes", controller = "StoryEditing", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] EditQuestionScenes(Int32) on controller Jam.Controllers.StoryEditingController (Jam).
+2025-11-07 14:37:53.025 +01:00 [INF] Executing ViewResult, running view EditQuestionScenes.
+2025-11-07 14:37:53.189 +01:00 [INF] Executed ViewResult - view EditQuestionScenes executed in 164.2201ms.
+2025-11-07 14:37:53.189 +01:00 [INF] Executed action Jam.Controllers.StoryEditingController.EditQuestionScenes (Jam) in 172.0612ms
+2025-11-07 14:37:53.189 +01:00 [INF] Executed endpoint 'Jam.Controllers.StoryEditingController.EditQuestionScenes (Jam)'
+2025-11-07 14:37:53.190 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7025/StoryEditing/EditQuestionScenes?storyId=1 - 200 null text/html; charset=utf-8 224.2434ms
+2025-11-07 14:37:54.675 +01:00 [INF] Request starting HTTP/2 POST https://localhost:7025/StoryEditing/DeleteQuestion?storyId=1&questionSceneId=2 - application/x-www-form-urlencoded 6488
+2025-11-07 14:37:54.702 +01:00 [INF] Executing endpoint 'Jam.Controllers.StoryEditingController.DeleteQuestion (Jam)'
+2025-11-07 14:37:54.713 +01:00 [INF] Route matched with {action = "DeleteQuestion", controller = "StoryEditing", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteQuestion(Int32, Int32) on controller Jam.Controllers.StoryEditingController (Jam).
+2025-11-07 14:37:54.719 +01:00 [INF] 🟢 DeleteQuestion CALLED: storyId=1, questionSceneId=2
+2025-11-07 14:37:54.749 +01:00 [INF] [SceneRepository -> DeleteQuestionScene] Deleted scene 2, linked previous=null → next=1
+2025-11-07 14:37:54.764 +01:00 [WRN] [SceneRepository -> DeleteQuestionScene] Scene not found with id 2
+2025-11-07 14:37:54.765 +01:00 [INF] Executing RedirectResult, redirecting to /StoryEditing/EditQuestionScenes?storyId=1.
+2025-11-07 14:37:54.765 +01:00 [INF] Executed action Jam.Controllers.StoryEditingController.DeleteQuestion (Jam) in 52.2341ms
+2025-11-07 14:37:54.765 +01:00 [INF] Executed endpoint 'Jam.Controllers.StoryEditingController.DeleteQuestion (Jam)'
+2025-11-07 14:37:54.765 +01:00 [INF] Request finished HTTP/2 POST https://localhost:7025/StoryEditing/DeleteQuestion?storyId=1&questionSceneId=2 - 302 0 null 89.7684ms
+2025-11-07 14:37:54.818 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7025/StoryEditing/EditQuestionScenes?storyId=1 - null null
+2025-11-07 14:37:54.819 +01:00 [INF] Executing endpoint 'Jam.Controllers.StoryEditingController.EditQuestionScenes (Jam)'
+2025-11-07 14:37:54.819 +01:00 [INF] Route matched with {action = "EditQuestionScenes", controller = "StoryEditing", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] EditQuestionScenes(Int32) on controller Jam.Controllers.StoryEditingController (Jam).
+2025-11-07 14:37:54.823 +01:00 [INF] Executing ViewResult, running view EditQuestionScenes.
+2025-11-07 14:37:54.856 +01:00 [INF] Executed ViewResult - view EditQuestionScenes executed in 33.2999ms.
+2025-11-07 14:37:54.857 +01:00 [INF] Executed action Jam.Controllers.StoryEditingController.EditQuestionScenes (Jam) in 37.8682ms
+2025-11-07 14:37:54.857 +01:00 [INF] Executed endpoint 'Jam.Controllers.StoryEditingController.EditQuestionScenes (Jam)'
+2025-11-07 14:37:54.857 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7025/StoryEditing/EditQuestionScenes?storyId=1 - 200 null text/html; charset=utf-8 39.239ms
+2025-11-07 14:37:56.249 +01:00 [INF] Request starting HTTP/2 POST https://localhost:7025/StoryEditing/EditQuestionScenes?storyId=1 - application/x-www-form-urlencoded 3549
+2025-11-07 14:37:56.251 +01:00 [INF] Executing endpoint 'Jam.Controllers.StoryEditingController.EditQuestionScenes (Jam)'
+2025-11-07 14:37:56.252 +01:00 [INF] Route matched with {action = "EditQuestionScenes", controller = "StoryEditing", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] EditQuestionScenes(System.Collections.Generic.List`1[Jam.ViewModels.QuestionSceneBaseViewModel]) on controller Jam.Controllers.StoryEditingController (Jam).
+2025-11-07 14:37:56.256 +01:00 [INF] Executing RedirectResult, redirecting to /StoryEditing/EditQuestionScenes?storyId=1.
+2025-11-07 14:37:56.256 +01:00 [INF] Executed action Jam.Controllers.StoryEditingController.EditQuestionScenes (Jam) in 4.4898ms
+2025-11-07 14:37:56.256 +01:00 [INF] Executed endpoint 'Jam.Controllers.StoryEditingController.EditQuestionScenes (Jam)'
+2025-11-07 14:37:56.257 +01:00 [INF] Request finished HTTP/2 POST https://localhost:7025/StoryEditing/EditQuestionScenes?storyId=1 - 302 0 null 7.6094ms
+2025-11-07 14:37:56.262 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7025/StoryEditing/EditQuestionScenes?storyId=1 - null null
+2025-11-07 14:37:56.263 +01:00 [INF] Executing endpoint 'Jam.Controllers.StoryEditingController.EditQuestionScenes (Jam)'
+2025-11-07 14:37:56.263 +01:00 [INF] Route matched with {action = "EditQuestionScenes", controller = "StoryEditing", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] EditQuestionScenes(Int32) on controller Jam.Controllers.StoryEditingController (Jam).
+2025-11-07 14:37:56.270 +01:00 [INF] Executing ViewResult, running view EditQuestionScenes.
+2025-11-07 14:37:56.381 +01:00 [INF] Executed ViewResult - view EditQuestionScenes executed in 110.7472ms.
+2025-11-07 14:37:56.381 +01:00 [INF] Executed action Jam.Controllers.StoryEditingController.EditQuestionScenes (Jam) in 118.1124ms
+2025-11-07 14:37:56.381 +01:00 [INF] Executed endpoint 'Jam.Controllers.StoryEditingController.EditQuestionScenes (Jam)'
+2025-11-07 14:37:56.383 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7025/StoryEditing/EditQuestionScenes?storyId=1 - 200 null text/html; charset=utf-8 120.5311ms
+2025-11-07 14:37:58.343 +01:00 [INF] Request starting HTTP/2 POST https://localhost:7025/StoryEditing/EditQuestionScenes?storyId=1 - application/x-www-form-urlencoded 3549
+2025-11-07 14:37:58.396 +01:00 [INF] Executing endpoint 'Jam.Controllers.StoryEditingController.EditQuestionScenes (Jam)'
+2025-11-07 14:37:58.397 +01:00 [INF] Route matched with {action = "EditQuestionScenes", controller = "StoryEditing", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] EditQuestionScenes(System.Collections.Generic.List`1[Jam.ViewModels.QuestionSceneBaseViewModel]) on controller Jam.Controllers.StoryEditingController (Jam).
+2025-11-07 14:37:58.399 +01:00 [INF] Executing RedirectResult, redirecting to /StoryEditing/EditQuestionScenes?storyId=1.
+2025-11-07 14:37:58.399 +01:00 [INF] Executed action Jam.Controllers.StoryEditingController.EditQuestionScenes (Jam) in 2.1161ms
+2025-11-07 14:37:58.399 +01:00 [INF] Executed endpoint 'Jam.Controllers.StoryEditingController.EditQuestionScenes (Jam)'
+2025-11-07 14:37:58.399 +01:00 [INF] Request finished HTTP/2 POST https://localhost:7025/StoryEditing/EditQuestionScenes?storyId=1 - 302 0 null 55.9607ms
+2025-11-07 14:37:58.429 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7025/StoryEditing/EditQuestionScenes?storyId=1 - null null
+2025-11-07 14:37:58.430 +01:00 [INF] Executing endpoint 'Jam.Controllers.StoryEditingController.EditQuestionScenes (Jam)'
+2025-11-07 14:37:58.430 +01:00 [INF] Route matched with {action = "EditQuestionScenes", controller = "StoryEditing", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] EditQuestionScenes(Int32) on controller Jam.Controllers.StoryEditingController (Jam).
+2025-11-07 14:37:58.441 +01:00 [INF] Executing ViewResult, running view EditQuestionScenes.
+2025-11-07 14:37:58.528 +01:00 [INF] Executed ViewResult - view EditQuestionScenes executed in 86.8644ms.
+2025-11-07 14:37:58.549 +01:00 [INF] Executed action Jam.Controllers.StoryEditingController.EditQuestionScenes (Jam) in 119.1493ms
+2025-11-07 14:37:58.549 +01:00 [INF] Executed endpoint 'Jam.Controllers.StoryEditingController.EditQuestionScenes (Jam)'
+2025-11-07 14:37:58.549 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7025/StoryEditing/EditQuestionScenes?storyId=1 - 200 null text/html; charset=utf-8 120.7935ms
+2025-11-07 14:38:33.353 +01:00 [INF] Request starting HTTP/2 POST https://localhost:7025/StoryEditing/EditQuestionScenes?storyId=1 - application/x-www-form-urlencoded 3549
+2025-11-07 14:38:33.390 +01:00 [INF] Executing endpoint 'Jam.Controllers.StoryEditingController.EditQuestionScenes (Jam)'
+2025-11-07 14:38:33.391 +01:00 [INF] Route matched with {action = "EditQuestionScenes", controller = "StoryEditing", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] EditQuestionScenes(System.Collections.Generic.List`1[Jam.ViewModels.QuestionSceneBaseViewModel]) on controller Jam.Controllers.StoryEditingController (Jam).
+2025-11-07 14:38:33.396 +01:00 [INF] Executing RedirectResult, redirecting to /StoryEditing/EditQuestionScenes?storyId=1.
+2025-11-07 14:38:33.398 +01:00 [INF] Executed action Jam.Controllers.StoryEditingController.EditQuestionScenes (Jam) in 6.8411ms
+2025-11-07 14:38:33.398 +01:00 [INF] Executed endpoint 'Jam.Controllers.StoryEditingController.EditQuestionScenes (Jam)'
+2025-11-07 14:38:33.398 +01:00 [INF] Request finished HTTP/2 POST https://localhost:7025/StoryEditing/EditQuestionScenes?storyId=1 - 302 0 null 92.4897ms
+2025-11-07 14:38:33.404 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7025/StoryEditing/EditQuestionScenes?storyId=1 - null null
+2025-11-07 14:38:33.405 +01:00 [INF] Executing endpoint 'Jam.Controllers.StoryEditingController.EditQuestionScenes (Jam)'
+2025-11-07 14:38:33.405 +01:00 [INF] Route matched with {action = "EditQuestionScenes", controller = "StoryEditing", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] EditQuestionScenes(Int32) on controller Jam.Controllers.StoryEditingController (Jam).
+2025-11-07 14:38:33.414 +01:00 [INF] Executing ViewResult, running view EditQuestionScenes.
+2025-11-07 14:38:33.495 +01:00 [INF] Executed ViewResult - view EditQuestionScenes executed in 81.1508ms.
+2025-11-07 14:38:33.496 +01:00 [INF] Executed action Jam.Controllers.StoryEditingController.EditQuestionScenes (Jam) in 90.9722ms
+2025-11-07 14:38:33.496 +01:00 [INF] Executed endpoint 'Jam.Controllers.StoryEditingController.EditQuestionScenes (Jam)'
+2025-11-07 14:38:33.497 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7025/StoryEditing/EditQuestionScenes?storyId=1 - 200 null text/html; charset=utf-8 93.1733ms
+2025-11-07 14:38:35.690 +01:00 [INF] Request starting HTTP/2 POST https://localhost:7025/StoryEditing/EditQuestionScenes?storyId=1 - application/x-www-form-urlencoded 3549
+2025-11-07 14:38:35.691 +01:00 [INF] Executing endpoint 'Jam.Controllers.StoryEditingController.EditQuestionScenes (Jam)'
+2025-11-07 14:38:35.691 +01:00 [INF] Route matched with {action = "EditQuestionScenes", controller = "StoryEditing", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] EditQuestionScenes(System.Collections.Generic.List`1[Jam.ViewModels.QuestionSceneBaseViewModel]) on controller Jam.Controllers.StoryEditingController (Jam).
+2025-11-07 14:38:35.692 +01:00 [INF] Executing RedirectResult, redirecting to /StoryEditing/EditQuestionScenes?storyId=1.
+2025-11-07 14:38:35.693 +01:00 [INF] Executed action Jam.Controllers.StoryEditingController.EditQuestionScenes (Jam) in 1.5887ms
+2025-11-07 14:38:35.693 +01:00 [INF] Executed endpoint 'Jam.Controllers.StoryEditingController.EditQuestionScenes (Jam)'
+2025-11-07 14:38:35.693 +01:00 [INF] Request finished HTTP/2 POST https://localhost:7025/StoryEditing/EditQuestionScenes?storyId=1 - 302 0 null 25.7855ms
+2025-11-07 14:38:35.697 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7025/StoryEditing/EditQuestionScenes?storyId=1 - null null
+2025-11-07 14:38:35.698 +01:00 [INF] Executing endpoint 'Jam.Controllers.StoryEditingController.EditQuestionScenes (Jam)'
+2025-11-07 14:38:35.698 +01:00 [INF] Route matched with {action = "EditQuestionScenes", controller = "StoryEditing", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] EditQuestionScenes(Int32) on controller Jam.Controllers.StoryEditingController (Jam).
+2025-11-07 14:38:35.702 +01:00 [INF] Executing ViewResult, running view EditQuestionScenes.
+2025-11-07 14:38:35.764 +01:00 [INF] Executed ViewResult - view EditQuestionScenes executed in 61.7058ms.
+2025-11-07 14:38:35.785 +01:00 [INF] Executed action Jam.Controllers.StoryEditingController.EditQuestionScenes (Jam) in 87.0287ms
+2025-11-07 14:38:35.785 +01:00 [INF] Executed endpoint 'Jam.Controllers.StoryEditingController.EditQuestionScenes (Jam)'
+2025-11-07 14:38:35.786 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7025/StoryEditing/EditQuestionScenes?storyId=1 - 200 null text/html; charset=utf-8 89.7329ms
+2025-11-07 14:38:53.368 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7025/StoryEditing/GetQuestionScenePartial?index=3&storyId=1 - null null
+2025-11-07 14:38:53.375 +01:00 [INF] Executing endpoint 'Jam.Controllers.StoryEditingController.GetQuestionScenePartial (Jam)'
+2025-11-07 14:38:53.384 +01:00 [INF] Route matched with {action = "GetQuestionScenePartial", controller = "StoryEditing", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetQuestionScenePartial(Int32, Int32) on controller Jam.Controllers.StoryEditingController (Jam).
+2025-11-07 14:38:53.391 +01:00 [INF] Executing PartialViewResult, running view ~/Views/Shared/_QuestionScenePartial.cshtml.
+2025-11-07 14:38:53.411 +01:00 [INF] Executed PartialViewResult - view ~/Views/Shared/_QuestionScenePartial.cshtml executed in 21.6379ms.
+2025-11-07 14:38:53.411 +01:00 [INF] Executed action Jam.Controllers.StoryEditingController.GetQuestionScenePartial (Jam) in 26.4589ms
+2025-11-07 14:38:53.411 +01:00 [INF] Executed endpoint 'Jam.Controllers.StoryEditingController.GetQuestionScenePartial (Jam)'
+2025-11-07 14:38:53.411 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7025/StoryEditing/GetQuestionScenePartial?index=3&storyId=1 - 200 null text/html; charset=utf-8 68.4459ms
+2025-11-07 14:39:03.192 +01:00 [INF] Request starting HTTP/2 POST https://localhost:7025/StoryEditing/EditQuestionScenes?storyId=1 - application/x-www-form-urlencoded 3855
+2025-11-07 14:39:03.247 +01:00 [INF] Executing endpoint 'Jam.Controllers.StoryEditingController.EditQuestionScenes (Jam)'
+2025-11-07 14:39:03.248 +01:00 [INF] Route matched with {action = "EditQuestionScenes", controller = "StoryEditing", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] EditQuestionScenes(System.Collections.Generic.List`1[Jam.ViewModels.QuestionSceneBaseViewModel]) on controller Jam.Controllers.StoryEditingController (Jam).
+2025-11-07 14:39:03.252 +01:00 [INF] Executing RedirectResult, redirecting to /StoryEditing/EditQuestionScenes?storyId=1.
+2025-11-07 14:39:03.257 +01:00 [INF] Executed action Jam.Controllers.StoryEditingController.EditQuestionScenes (Jam) in 9.1605ms
+2025-11-07 14:39:03.257 +01:00 [INF] Executed endpoint 'Jam.Controllers.StoryEditingController.EditQuestionScenes (Jam)'
+2025-11-07 14:39:03.258 +01:00 [INF] Request finished HTTP/2 POST https://localhost:7025/StoryEditing/EditQuestionScenes?storyId=1 - 302 0 null 87.6325ms
+2025-11-07 14:39:03.289 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7025/StoryEditing/EditQuestionScenes?storyId=1 - null null
+2025-11-07 14:39:03.290 +01:00 [INF] Executing endpoint 'Jam.Controllers.StoryEditingController.EditQuestionScenes (Jam)'
+2025-11-07 14:39:03.290 +01:00 [INF] Route matched with {action = "EditQuestionScenes", controller = "StoryEditing", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] EditQuestionScenes(Int32) on controller Jam.Controllers.StoryEditingController (Jam).
+2025-11-07 14:39:03.304 +01:00 [INF] Executing ViewResult, running view EditQuestionScenes.
+2025-11-07 14:39:03.366 +01:00 [INF] Executed ViewResult - view EditQuestionScenes executed in 61.778ms.
+2025-11-07 14:39:03.415 +01:00 [INF] Executed action Jam.Controllers.StoryEditingController.EditQuestionScenes (Jam) in 124.8261ms
+2025-11-07 14:39:03.491 +01:00 [INF] Executed endpoint 'Jam.Controllers.StoryEditingController.EditQuestionScenes (Jam)'
+2025-11-07 14:39:03.492 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7025/StoryEditing/EditQuestionScenes?storyId=1 - 200 null text/html; charset=utf-8 202.7059ms

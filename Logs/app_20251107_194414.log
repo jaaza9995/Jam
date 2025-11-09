@@ -1,0 +1,90 @@
+2025-11-07 19:44:14.688 +01:00 [INF] User profile is available. Using '/Users/jaraazad/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-11-07 19:44:15.164 +01:00 [INF] Applying migration '20251024065541_InitialCreate'.
+2025-11-07 19:44:15.203 +01:00 [INF] Applying migration '20251101105657_AddIdentitySupport'.
+2025-11-07 19:44:15.244 +01:00 [INF] Applying migration '20251103080324_UpdateNextQuestionSceneDeleteBehavior'.
+2025-11-07 19:44:16.227 +01:00 [INF] Now listening on: https://localhost:7025
+2025-11-07 19:44:16.227 +01:00 [INF] Now listening on: http://localhost:5262
+2025-11-07 19:44:16.232 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-07 19:44:16.233 +01:00 [INF] Hosting environment: Development
+2025-11-07 19:44:16.233 +01:00 [INF] Content root path: /Users/jaraazad/Desktop/Jam
+2025-11-07 19:44:16.641 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7025/ - null null
+2025-11-07 19:44:16.682 +01:00 [INF] Executing endpoint 'Jam.Controllers.HomeController.Index (Jam)'
+2025-11-07 19:44:16.691 +01:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller Jam.Controllers.HomeController (Jam).
+2025-11-07 19:44:16.707 +01:00 [WRN] [HomeController -> Index] Auth cookie invalid or user no longer exists. Redirecting to login.
+2025-11-07 19:44:16.709 +01:00 [INF] AuthenticationScheme: Identity.Application signed out.
+2025-11-07 19:44:16.710 +01:00 [INF] AuthenticationScheme: Identity.External signed out.
+2025-11-07 19:44:16.710 +01:00 [INF] AuthenticationScheme: Identity.TwoFactorUserId signed out.
+2025-11-07 19:44:16.711 +01:00 [INF] Executing LocalRedirectResult, redirecting to /Identity/Account/Login.
+2025-11-07 19:44:16.713 +01:00 [INF] Executed action Jam.Controllers.HomeController.Index (Jam) in 20.7917ms
+2025-11-07 19:44:16.714 +01:00 [INF] Executed endpoint 'Jam.Controllers.HomeController.Index (Jam)'
+2025-11-07 19:44:16.717 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7025/ - 302 0 null 77.2532ms
+2025-11-07 19:44:16.753 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7025/Identity/Account/Login - null null
+2025-11-07 19:44:16.760 +01:00 [INF] Executing endpoint '/Account/Login'
+2025-11-07 19:44:16.848 +01:00 [INF] Route matched with {page = "/Account/Login", area = "Identity", action = "", controller = ""}. Executing page /Account/Login
+2025-11-07 19:44:16.886 +01:00 [INF] Executing handler method Jam.Areas.Identity.Pages.Account.LoginModel.OnGetAsync - ModelState is "Valid"
+2025-11-07 19:44:16.887 +01:00 [INF] AuthenticationScheme: Identity.External signed out.
+2025-11-07 19:44:16.888 +01:00 [INF] Executed handler method OnGetAsync, returned result .
+2025-11-07 19:44:16.889 +01:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2025-11-07 19:44:16.890 +01:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2025-11-07 19:44:16.974 +01:00 [INF] Executed page /Account/Login in 124.9828ms
+2025-11-07 19:44:16.974 +01:00 [INF] Executed endpoint '/Account/Login'
+2025-11-07 19:44:16.981 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7025/Identity/Account/Login - 200 null text/html; charset=utf-8 228.5284ms
+2025-11-07 19:44:17.010 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7025/lib/jquery-validation/dist/jquery.validate.min.js - null null
+2025-11-07 19:44:17.022 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7025/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js - null null
+2025-11-07 19:44:17.053 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7025/lib/jquery-validation/dist/jquery.validate.min.js - 404 0 null 43.5615ms
+2025-11-07 19:44:17.053 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7025/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js - 404 0 null 30.703ms
+2025-11-07 19:44:17.054 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7025/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js, Response status code: 404
+2025-11-07 19:44:17.054 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7025/lib/jquery-validation/dist/jquery.validate.min.js, Response status code: 404
+2025-11-07 19:44:17.766 +01:00 [INF] Request starting HTTP/2 POST https://localhost:7025/Identity/Account/Login - application/x-www-form-urlencoded 236
+2025-11-07 19:44:17.775 +01:00 [INF] Executing endpoint '/Account/Login'
+2025-11-07 19:44:17.777 +01:00 [INF] Route matched with {page = "/Account/Login", area = "Identity", action = "", controller = ""}. Executing page /Account/Login
+2025-11-07 19:44:17.839 +01:00 [INF] Executing handler method Jam.Areas.Identity.Pages.Account.LoginModel.OnPostAsync - ModelState is "Valid"
+2025-11-07 19:44:18.037 +01:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2025-11-07 19:44:18.038 +01:00 [INF] User logged in.
+2025-11-07 19:44:18.039 +01:00 [INF] Executed handler method OnPostAsync, returned result Microsoft.AspNetCore.Mvc.LocalRedirectResult.
+2025-11-07 19:44:18.039 +01:00 [INF] Executing LocalRedirectResult, redirecting to /.
+2025-11-07 19:44:18.039 +01:00 [INF] Executed page /Account/Login in 261.5635ms
+2025-11-07 19:44:18.039 +01:00 [INF] Executed endpoint '/Account/Login'
+2025-11-07 19:44:18.039 +01:00 [INF] Request finished HTTP/2 POST https://localhost:7025/Identity/Account/Login - 302 0 null 316.2668ms
+2025-11-07 19:44:18.045 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7025/ - null null
+2025-11-07 19:44:18.070 +01:00 [INF] Executing endpoint 'Jam.Controllers.HomeController.Index (Jam)'
+2025-11-07 19:44:18.070 +01:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller Jam.Controllers.HomeController (Jam).
+2025-11-07 19:44:18.325 +01:00 [INF] Executing ViewResult, running view Index.
+2025-11-07 19:44:18.425 +01:00 [INF] Executed ViewResult - view Index executed in 73.6094ms.
+2025-11-07 19:44:18.463 +01:00 [INF] Executed action Jam.Controllers.HomeController.Index (Jam) in 392.546ms
+2025-11-07 19:44:18.463 +01:00 [INF] Executed endpoint 'Jam.Controllers.HomeController.Index (Jam)'
+2025-11-07 19:44:18.464 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7025/ - 200 null text/html; charset=utf-8 419.2469ms
+2025-11-07 19:44:19.144 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7025/StoryCreation/CreateStoryAndIntro - null null
+2025-11-07 19:44:19.182 +01:00 [INF] Executing endpoint 'Jam.Controllers.StoryCreationController.CreateStoryAndIntro (Jam)'
+2025-11-07 19:44:19.187 +01:00 [INF] Route matched with {action = "CreateStoryAndIntro", controller = "StoryCreation", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreateStoryAndIntro() on controller Jam.Controllers.StoryCreationController (Jam).
+2025-11-07 19:44:19.192 +01:00 [INF] Accessing expired session, Key:81240ac2-d632-8b42-bfc2-321f7eaa06ba
+2025-11-07 19:44:19.202 +01:00 [INF] Executing ViewResult, running view CreateStoryAndIntro.
+2025-11-07 19:44:19.289 +01:00 [INF] Executed ViewResult - view CreateStoryAndIntro executed in 89.3615ms.
+2025-11-07 19:44:19.303 +01:00 [INF] Executed action Jam.Controllers.StoryCreationController.CreateStoryAndIntro (Jam) in 115.6507ms
+2025-11-07 19:44:19.314 +01:00 [INF] Executed endpoint 'Jam.Controllers.StoryCreationController.CreateStoryAndIntro (Jam)'
+2025-11-07 19:44:19.325 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7025/StoryCreation/CreateStoryAndIntro - 200 null text/html; charset=utf-8 180.5416ms
+2025-11-07 19:44:23.579 +01:00 [INF] Request starting HTTP/2 POST https://localhost:7025/StoryCreation/CreateStoryAndIntro - application/x-www-form-urlencoded 303
+2025-11-07 19:44:23.613 +01:00 [INF] Executing endpoint 'Jam.Controllers.StoryCreationController.CreateStoryAndIntro (Jam)'
+2025-11-07 19:44:23.625 +01:00 [INF] Route matched with {action = "CreateStoryAndIntro", controller = "StoryCreation", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreateStoryAndIntro(Jam.ViewModels.StoryCreation.CreateStoryAndIntroViewModel, System.String) on controller Jam.Controllers.StoryCreationController (Jam).
+2025-11-07 19:44:23.631 +01:00 [INF] Accessing expired session, Key:81240ac2-d632-8b42-bfc2-321f7eaa06ba
+2025-11-07 19:44:23.659 +01:00 [INF] Executing RedirectResult, redirecting to /StoryCreation/CreateQuestionScenes.
+2025-11-07 19:44:23.659 +01:00 [INF] Executed action Jam.Controllers.StoryCreationController.CreateStoryAndIntro (Jam) in 33.6295ms
+2025-11-07 19:44:23.659 +01:00 [INF] Executed endpoint 'Jam.Controllers.StoryCreationController.CreateStoryAndIntro (Jam)'
+2025-11-07 19:44:23.659 +01:00 [INF] Session started; Key:81240ac2-d632-8b42-bfc2-321f7eaa06ba, Id:e123c052-9164-78f6-b103-4b0b760fb24d
+2025-11-07 19:44:23.660 +01:00 [INF] Request finished HTTP/2 POST https://localhost:7025/StoryCreation/CreateStoryAndIntro - 302 0 null 80.8783ms
+2025-11-07 19:44:23.663 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7025/StoryCreation/CreateQuestionScenes - null null
+2025-11-07 19:44:23.664 +01:00 [INF] Executing endpoint 'Jam.Controllers.StoryCreationController.CreateQuestionScenes (Jam)'
+2025-11-07 19:44:23.666 +01:00 [INF] Route matched with {action = "CreateQuestionScenes", controller = "StoryCreation", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreateQuestionScenes() on controller Jam.Controllers.StoryCreationController (Jam).
+2025-11-07 19:44:23.672 +01:00 [INF] Executing ViewResult, running view CreateQuestionScenes.
+2025-11-07 19:44:23.695 +01:00 [INF] Executed ViewResult - view CreateQuestionScenes executed in 23.8921ms.
+2025-11-07 19:44:23.743 +01:00 [INF] Executed action Jam.Controllers.StoryCreationController.CreateQuestionScenes (Jam) in 77.1222ms
+2025-11-07 19:44:23.743 +01:00 [INF] Executed endpoint 'Jam.Controllers.StoryCreationController.CreateQuestionScenes (Jam)'
+2025-11-07 19:44:23.744 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7025/StoryCreation/CreateQuestionScenes - 200 null text/html; charset=utf-8 80.5397ms
+2025-11-07 19:44:25.197 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7025/StoryCreation/GetQuestionScenePartial?index=1&questionNumber=2 - null null
+2025-11-07 19:44:25.199 +01:00 [INF] Executing endpoint 'Jam.Controllers.StoryCreationController.GetQuestionScenePartial (Jam)'
+2025-11-07 19:44:25.203 +01:00 [INF] Route matched with {action = "GetQuestionScenePartial", controller = "StoryCreation", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetQuestionScenePartial(Int32, Int32) on controller Jam.Controllers.StoryCreationController (Jam).
+2025-11-07 19:44:25.212 +01:00 [INF] Executing PartialViewResult, running view _QuestionScenePartial.
+2025-11-07 19:44:25.223 +01:00 [INF] Executed PartialViewResult - view _QuestionScenePartial executed in 11.7979ms.
+2025-11-07 19:44:25.224 +01:00 [INF] Executed action Jam.Controllers.StoryCreationController.GetQuestionScenePartial (Jam) in 20.4443ms
+2025-11-07 19:44:25.224 +01:00 [INF] Executed endpoint 'Jam.Controllers.StoryCreationController.GetQuestionScenePartial (Jam)'
+2025-11-07 19:44:25.224 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7025/StoryCreation/GetQuestionScenePartial?index=1&questionNumber=2 - 200 null text/html; charset=utf-8 26.5092ms

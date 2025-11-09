@@ -1,0 +1,25 @@
+@using Jam.ViewModels.StoryEditing
+@model EditIntroSceneViewModel
+
+<h3>Intro Scene</h3>
+
+<form asp-action="EditIntroScene" method="post">
+
+    <input type="hidden" name="StoryId" value="@Model.StoryId" />
+
+    <div class="form-group">
+        <label asp-for="IntroText">Intro Text</label>
+        <textarea asp-for="IntroText" class="form-control"></textarea>
+        <span asp-validation-for="IntroText" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Save Changes</button>
+    <a asp-controller="StoryEditing"
+   asp-action="EditStory"
+   asp-route-storyId="@Model.StoryId"
+   class="btn btn-outline-secondary ms-2">
+    ← Back
+</a>
+
+
+</form>
